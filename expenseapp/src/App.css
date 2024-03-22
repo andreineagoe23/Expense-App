@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+colgroup {
+  --color-1: #12a5b5;
+  --color-2: #0c1536;
+  --color-3: #61ddb4;
+  --color-4: #208484;
+  --color-5: #12385d;
+}
