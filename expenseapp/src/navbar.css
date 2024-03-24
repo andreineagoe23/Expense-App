@@ -1,0 +1,58 @@
+nav {
+  background-color: #12385d;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar {
+  display: flex; /* Allow buttons to sit side-by-side */
+  justify-content: center;
+  list-style: none;
+  padding: 0; /* Reset default list padding */
+  margin: 0; /* Reset default list margin */
+}
+
+#navbar li {
+  padding: 0 20px;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+#navbar li a:hover {
+  color: #61ddb4;
+}
+
+#login {
+  display: flex; /* Allow login buttons to sit side-by-side */
+  align-items: right;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#login li {
+  padding: 0 10px; /* Smaller padding for login buttons */
+}
+
+/* BEGIN: Centering the navbar links */
+#navbar {
+  justify-content: center;
+}
+
+#navbar li {
+  padding: 0 10px;
+}
+
+#login {
+  justify-content: flex-end;
+}
+/* END: Centering the navbar links */

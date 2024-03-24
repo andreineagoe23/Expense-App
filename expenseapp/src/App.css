@@ -5,12 +5,11 @@ body {
   font-family: "Arial", sans-serif;
 }
 
-.middle-buttons {
-  display: flex;
-  justify-content: center;
-}
-
-.right-buttons {
-  display: flex;
-  justify-content: flex-end;
+colgroup {
+  background-color: #f2f2f2;
+  background-color: #0c1536;
+  background-color: #12385d;
+  background-color: #12a5b5;
+  background-color: #208484;
+  background-color: #61ddb4;
 }
