@@ -17,7 +17,6 @@ class RegisterForm extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault();
     // Add your register logic here
-    // You can access the form data using this.state
   };
 
   render() {
