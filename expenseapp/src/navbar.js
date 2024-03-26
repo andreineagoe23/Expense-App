@@ -6,7 +6,7 @@ function Navbar() {
       <nav>
         <div className="navbar-left">
           <a href="App.js">
-            <img src="./Images/logo.jpg" alt="Logo" />
+            <img src="./Images/logo.jpg" alt="ExpenseReport" />
           </a>
         </div>
 
