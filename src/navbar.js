@@ -1,4 +1,7 @@
 import "./navbar.css";
+import logo from './logo.jpg'
+import loginBackground from "./Login/login.jpeg";
+import React from "react";
 
 function Navbar() {
   return (
@@ -6,7 +9,7 @@ function Navbar() {
       <nav>
         <div className="navbar-left">
           <a href="App.js">
-            <img src="./Images/logo.jpg" alt="ExpenseReport" />
+            <img src={logo} alt="login-background"/>
           </a>
         </div>
 
