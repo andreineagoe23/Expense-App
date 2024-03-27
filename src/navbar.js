@@ -1,9 +1,23 @@
 import "./navbar.css";
 import logo from "./logo.jpg";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
+  const location = useLocation();
+
+  const isLoginPage = location.pathname === "/login";
+
+  if (isLoginPage) {
+    return null;
+  }
+
+  const isRegisterPage = location.pathname === "/register";
+
+  if (isRegisterPage) {
+    return null;
+  }
+
   return (
     <>
       <nav>

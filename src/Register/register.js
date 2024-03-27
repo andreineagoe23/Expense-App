@@ -1,62 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./register.css";
+import loginBackground from "./login.jpeg";
 
-class RegisterForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      username: "",
-      email: "",
-      password: "",
-    };
-  }
+const RegisterForm = () => {
+  const [formData, setFormData] = useState({
+    username: "",
+    email: "",
+    password: "",
+  });
 
-  handleInputChange = (event) => {
-    const { name, value } = event.target;
-    this.setState({ [name]: value });
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
   };
 
-  handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
     // Add your register logic here
+    console.log("Submitted:", formData);
   };
 
-  render() {
-    return (
-      <form onSubmit={this.handleSubmit}>
-        <label>
-          Username:
+  return (
+    <div className="container">
+      <div className="register-background">
+        <img src={loginBackground} alt="login-background" />
+      </div>
+      <div className="register form">
+        <header>Signup</header>
+        <form onSubmit={handleSubmit}>
           <input
             type="text"
+            placeholder="Enter your username"
             name="username"
-            value={this.state.username}
-            onChange={this.handleInputChange}
+            value={formData.username}
+            onChange={handleInputChange}
           />
-        </label>
-        <br />
-        <label>
-          Email:
           <input
             type="email"
+            placeholder="Enter your email"
             name="email"
-            value={this.state.email}
-            onChange={this.handleInputChange}
+            value={formData.email}
+            onChange={handleInputChange}
           />
-        </label>
-        <br />
-        <label>
-          Password:
           <input
             type="password"
+            placeholder="Enter your password"
             name="password"
-            value={this.state.password}
-            onChange={this.handleInputChange}
+            value={formData.password}
+            onChange={handleInputChange}
           />
-        </label>
-        <br />
-        <button type="submit">Register</button>
-      </form>
-    );
-  }
-}
+          <button type="submit" className="button">Register</button>
+        </form>
+        <div className="home-button">
+          <Link to="/" className="button">Home</Link>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default RegisterForm;

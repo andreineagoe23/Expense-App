@@ -26,35 +26,29 @@ const Login = () => {
       <div className="login-background">
         <img src={loginBackground} alt="login-background" />
       </div>
-      <div className="form-container">
-        <h2>Login</h2>
+      <div className="login form">
+        <header>Login</header>
         <form onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="username">Username:</label>
-            <input
-              type="text"
-              id="username"
-              value={username}
-              onChange={handleUsernameChange}
-            />
-          </div>
-          <div>
-            <label htmlFor="password">Password:</label>
-            <input
-              type="password"
-              id="password"
-              value={password}
-              onChange={handlePasswordChange}
-            />
-          </div>
-          <div className="forgot-password">
-            <p>Forgot your password?</p>
-            <button type="submit" className="submit-button">Submit</button>
-          </div>
+          <input
+            type="text"
+            placeholder="Enter your email"
+            value={username}
+            onChange={handleUsernameChange}
+          />
+          <input
+            type="password"
+            placeholder="Enter your password"
+            value={password}
+            onChange={handlePasswordChange}
+          />
+          <Link to="/forgot-password">Forgot password?</Link>
+          <input type="submit" className="button" value="Login" />
         </form>
-        <div className="button-container">
-          <Link to="/login" className="link-text">Login</Link>
-          <Link to="/register" className="link-text">Register</Link>
+        <div className="signup">
+          <span className="signup">
+            Don't have an account?{" "}
+            <Link to="/register">Signup</Link>
+          </span>
         </div>
       </div>
     </div>
