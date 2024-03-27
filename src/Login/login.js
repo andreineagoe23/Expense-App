@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import "./login.css"; // Import the CSS file
-import loginBackground from './login.jpeg'
-
+import "./login.css";
+import loginBackground from "./login.jpeg";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -24,7 +23,7 @@ const Login = () => {
   return (
     <div className="container">
       <div className="login-background">
-        <img src={loginBackground} alt="login-background"/>
+        <img src={loginBackground} alt="login-background" />
       </div>
       <div className="form-container">
         <h2>Login</h2>
