@@ -1,31 +1,31 @@
 import "./navbar.css";
-import logo from './logo.jpg'
-import loginBackground from "./Login/login.jpeg";
+import logo from "./logo.jpg";
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <>
       <nav>
         <div className="navbar-left">
-          <a href="App.js">
-            <img src={logo} alt="login-background"/>
-          </a>
+          <Link to="/">
+            <img src={logo} alt="logo" />
+          </Link>
         </div>
 
         <div className="navbar-middle">
           <ul id="navbar">
             <li>
-              <a href="App.js">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="App.js">Training Course</a>
+              <Link to="/training">Training Course</Link>
             </li>
             <li>
-              <a href="App.js">Expense</a>
+              <Link to="/expense">Expense</Link>
             </li>
             <li>
-              <a href="App.js">Support</a>
+              <Link to="/support">Support</Link>
             </li>
           </ul>
         </div>
@@ -33,10 +33,10 @@ function Navbar() {
         <div className="navbar-right">
           <ul id="login">
             <li>
-              <a href="/login.js">Login</a>
+              <Link to="/login">Login</Link>
             </li>
             <li>
-              <a href="/register.js">Become a member</a>
+              <Link to="/register">Become a member</Link>
             </li>
           </ul>
         </div>

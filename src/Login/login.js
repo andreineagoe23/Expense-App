@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./login.css";
 import loginBackground from "./login.jpeg";
 
@@ -46,11 +47,15 @@ const Login = () => {
               onChange={handlePasswordChange}
             />
           </div>
-          <div>
+          <div className="forgot-password">
             <p>Forgot your password?</p>
+            <button type="submit" className="submit-button">Submit</button>
           </div>
-          <button type="submit">Login</button>
         </form>
+        <div className="button-container">
+          <Link to="/login" className="link-text">Login</Link>
+          <Link to="/register" className="link-text">Register</Link>
+        </div>
       </div>
     </div>
   );

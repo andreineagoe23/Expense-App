@@ -1,9 +1,9 @@
 import "./App.css";
 import Navbar from "./navbar.js";
-import Login from "./Login/login.js";
+import Login from "./login/login.js";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import RegisterForm from "./Register/register.js";
+import RegisterForm from "./register/register.js";
 
 function App() {
   return (
@@ -12,8 +12,8 @@ function App() {
         <Navbar />
       </div>
       <Routes>
-        <Route path="/login.js" element={<Login />} />
-        <Route path="/register.js" element={<RegisterForm />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<RegisterForm />} />
       </Routes>
     </BrowserRouter>
   );
