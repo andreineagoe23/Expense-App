@@ -5,7 +5,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import RegisterForm from "./Register/register.js";
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <div className="App">
@@ -18,5 +18,3 @@ function App() {
     </BrowserRouter>
   );
 }
-
-export default App;
