@@ -4,14 +4,12 @@ import techImg from './tech.jpg'
 import {
     BiGridAlt,
     BiCollection,
-    BiBookAlt,
     BiFace,
     BiLineChart,
     BiCog,
     BiLogOut,
     BiChevronDown,
     BiMenu,
-    BiMoneyWithdraw,
     BiTime,
     BiHelpCircle
 } from 'react-icons/bi';
