@@ -5,6 +5,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import RegisterForm from "./Register/register.js";
 import TrainingMainPage from "./Training/Training-Main-Page";
+import HomePage from "./Home/homepage.js";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Navbar />
       </div>
       <Routes>
+      <Route path="/home" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<RegisterForm />} />
         <Route path = "/TrainingMainPage" element={<TrainingMainPage/>}/>
