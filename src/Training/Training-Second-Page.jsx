@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import './TrainingMainPage.css';
-import techImg from './tech.jpg'
-import intro3Img from './intro3.png'
+import './TrainingSecondPage.css';
 import { Link, useLocation } from "react-router-dom";
+
+
+
+
 import {
     BiGridAlt,
     BiCollection,
@@ -15,6 +17,8 @@ import {
     BiTime,
     BiHelpCircle, BiSkipNext
 } from 'react-icons/bi';
+import logo from "../logo.jpg";
+
 const CustomizedBiLogOut = () => {
     return (
         <BiLogOut className="custom-logout-icon" />
@@ -43,7 +47,7 @@ const CustomizedSkipPage = () => {
     )
 }
 
-const TrainingMainPage = () => {
+const TrainingSecondPage = () => {
     const [sidebarOpen, setSidebarOpen] = useState(true);
 
     const handleArrowClick = (e) => {
@@ -51,11 +55,6 @@ const TrainingMainPage = () => {
         arrowParent.classList.toggle('showMenu');
     };
 
-    const location = useLocation();
-    const isLoginPage = location.pathname === "/login";
-    if (isLoginPage) {
-        return null;
-    }
     const handleSidebarToggle = () => {
         setSidebarOpen(!sidebarOpen);
     };
@@ -70,10 +69,7 @@ const TrainingMainPage = () => {
 
     return (
         <>
-            <Link to="/TrainingSecondPage">
-                <img src={intro3Img} alt='BackgroundImage' className='intro-image'/>
-            </Link>
-            <img src={techImg} alt='BackgroundImage' className='background-image'/>
+
             <div className={`sidebar ${sidebarOpen ? '' : 'close'}`} onClick={handleSidebarClick}>
 
 
@@ -162,6 +158,7 @@ const TrainingMainPage = () => {
                             <BiCog/>
                             <span className="link_name">Login</span>
                         </Link>
+
                         <ul className="sub-menu blank">
                             <li><a className="link_name" href="#">Login</a></li>
                         </ul>
@@ -190,4 +187,4 @@ const TrainingMainPage = () => {
     )
         ;
 };
-export default TrainingMainPage;
+export default TrainingSecondPage;

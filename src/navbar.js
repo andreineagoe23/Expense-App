@@ -6,6 +6,7 @@ import { Link, useLocation } from "react-router-dom";
 function Navbar() {
   const location = useLocation();
   const isTrainingMainPage = location.pathname === "/TrainingMainPage";
+  const isTrainingSecondPage = location.pathname === "/TrainingSecondPage";
   const isLoginPage = location.pathname === "/login";
   const isRegisterPage = location.pathname === "/register";
 
@@ -18,6 +19,9 @@ function Navbar() {
   }
 
   if (isTrainingMainPage) {
+    return null;
+  }
+  if (isTrainingSecondPage) {
     return null;
   }
 
