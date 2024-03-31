@@ -5,57 +5,50 @@ import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
   const location = useLocation();
+  const isTrainingMainPage = location.pathname === "/TrainingMainPage";
 
-  const isLoginPage = location.pathname === "/login";
-
-  if (isLoginPage) {
+  // hide Navbar on training page
+  if ( isTrainingMainPage) {
     return null;
   }
-
-  const isRegisterPage = location.pathname === "/register";
-
-  if (isRegisterPage) {
-    return null;
-  }
-
   return (
-    <>
-      <nav>
-        <div className="navbar-left">
-          <Link to="/">
-            <img src={logo} alt="logo" />
-          </Link>
-        </div>
+      <>
+        <nav>
+          <div className="navbar-left">
+            <Link to="/">
+              <img src={logo} alt="logo" />
+            </Link>
+          </div>
 
-        <div className="navbar-middle">
-          <ul id="navbar">
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/training">Training Course</Link>
-            </li>
-            <li>
-              <Link to="/expense">Expense</Link>
-            </li>
-            <li>
-              <Link to="/support">Support</Link>
-            </li>
-          </ul>
-        </div>
+          <div className="navbar-middle">
+            <ul id="navbar">
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/TrainingMainPage">Training Course</Link>
+              </li>
+              <li>
+                <Link to="/expense">Expense</Link>
+              </li>
+              <li>
+                <Link to="/support">Support</Link>
+              </li>
+            </ul>
+          </div>
 
-        <div className="navbar-right">
-          <ul id="login">
-            <li>
-              <Link to="/login">Login</Link>
-            </li>
-            <li>
-              <Link to="/register">Become a member</Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </>
+          <div className="navbar-right">
+            <ul id="login">
+              <li>
+                <Link to="/login">Login</Link>
+              </li>
+              <li>
+                <Link to="/register">Become a member</Link>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </>
   );
 }
 
