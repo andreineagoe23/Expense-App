@@ -7,6 +7,7 @@ function Navbar() {
   const location = useLocation();
   const isTrainingMainPage = location.pathname === "/TrainingMainPage";
   const isTrainingSecondPage = location.pathname === "/TrainingSecondPage";
+  const isTrainingFinishPage = location.pathname === "/TrainingFinishPage";
   const isLoginPage = location.pathname === "/login";
   const isRegisterPage = location.pathname === "/register";
 
@@ -22,6 +23,9 @@ function Navbar() {
     return null;
   }
   if (isTrainingSecondPage) {
+    return null;
+  }
+  if (isTrainingFinishPage) {
     return null;
   }
 

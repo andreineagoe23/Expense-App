@@ -5,6 +5,8 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import RegisterForm from "./Register/register.js";
 import TrainingMainPage from "./Training/Training-Main-Page";
+import TrainingSecondPage from "./Training/Training-Second-Page";
+import TrainingFinishPage from "./Training/Training-Finish-Page";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<RegisterForm />} />
         <Route path = "/TrainingMainPage" element={<TrainingMainPage/>}/>
+          <Route path = "/TrainingSecondPage" element={<TrainingSecondPage/>}/>
+          <Route path = "/TrainingFinishPage" element={<TrainingFinishPage/>}/>
       </Routes>
     </BrowserRouter>
   );

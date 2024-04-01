@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import './TrainingSecondPage.css';
 import { Link, useLocation } from "react-router-dom";
-
-
+import rainVideo from './Rain_Drops_1.mp4';
 
 
 import {
@@ -13,11 +12,12 @@ import {
     BiCog,
     BiLogOut,
     BiChevronDown,
-    BiMenu,
-    BiTime,
-    BiHelpCircle, BiSkipNext
+    BiSkipPrevious,
+    BiHelpCircle,
+    BiSkipNext,
+    BiMenu
 } from 'react-icons/bi';
-import logo from "../logo.jpg";
+
 
 const CustomizedBiLogOut = () => {
     return (
@@ -47,9 +47,16 @@ const CustomizedSkipPage = () => {
     )
 }
 
-const TrainingSecondPage = () => {
-    const [sidebarOpen, setSidebarOpen] = useState(true);
 
+const TrainingSecondPage = () => {
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+    const [showVideo, setShowVideo] = useState(false);
+
+    const handleVideoButtonClick = () => {
+        setShowVideo(true);
+    };
+    const [sidebarOpen, setSidebarOpen] = useState(true);
     const handleArrowClick = (e) => {
         const arrowParent = e.target.parentElement.parentElement;
         arrowParent.classList.toggle('showMenu');
@@ -68,11 +75,8 @@ const TrainingSecondPage = () => {
     };
 
     return (
-        <>
-
+        <div className="training-second-page">
             <div className={`sidebar ${sidebarOpen ? '' : 'close'}`} onClick={handleSidebarClick}>
-
-
                 <div className="logo-details">
                     <CustomizedBiFace/>
                     <span className="logo_name">   Hey User</span>
@@ -178,13 +182,31 @@ const TrainingSecondPage = () => {
                     <span className="text"></span>
                 </div>
             </section>
-            <div className="skip-page">
-                <div className="next-page">
+            <section className="how-to-section" style={{display: showVideo ? 'none' : 'block'}}>
+                <div className="how-to-content">
+                    <span className="how-to-text">How to file an expense:</span>
                 </div>
-                <CustomizedSkipPage/>
-            </div>
-        </>
-    )
-        ;
+            </section>
+            <section className="video-section" style={{display: showVideo ? 'block' : 'none'}}>
+                <div>
+                    <video controls>
+                        <source src={rainVideo} type="video/mp4"/>
+                        Your browser does not support the video tag.
+                    </video>
+                    <Link to="/TrainingFinishPage">
+                        <button className = "next-button">Next -></button>
+                    </Link>
+                </div>
+            </section>
+            <section className="video-selection" style={{display: showVideo ? 'none' : 'block'}}>
+                <div className="how-to-video">
+                    <span className="how-to-button"></span>
+                    <button className="video-button" onClick={handleVideoButtonClick}>Watch Video</button>
+                </div>
+            </section>
+
+        </div>
+    );
 };
+
 export default TrainingSecondPage;

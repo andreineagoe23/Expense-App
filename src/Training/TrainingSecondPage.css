@@ -9,6 +9,53 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.video-button {
+    background-color: #1d1b31;
+    color: #fff;
+    padding: 1em 2em; /* Using em units for padding */
+    border: none;
+    border-radius: 0.5em; /* Using em units for border radius */
+    font-size: 1em; /* Using em units for font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 12%; /* Move the button 20px down from the top */
+    margin-left:52%; /* Move the button 100px to the right from the left */
+}
+.next-button{
+    background-color: #1d1b31;
+    color: #fff;
+    padding: 0.5em 2em; /* Using em units for padding */
+    border: none;
+    border-radius: 0.5em; /* Using em units for border radius */
+    font-size: 1em; /* Using em units for font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 2%; /* Move the button 20px down from the top */
+    margin-left:40%; /* Move the button 100px to the right from the left */
+}
+.video-button:hover {
+    background-color: #0d0b1b; /* Darken color on hover */
+}
+
+.video-section video {
+    width: 90%; /* Make the video element fill its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0.5em; /* Add border radius if desired */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+    outline: none;
+}
+.video-section{
+    margin-left: 25%;
+    margin-top: -5%;
+}
+
+.how-to-section {
+    color: black;
+    position: absolute;
+    top: 40%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+}
 .sidebar.close .nav-links li a .link_name,
 .sidebar.close .nav-links li .sub-menu a,
 .sidebar.close .nav-links li i {
@@ -107,12 +154,7 @@
     transition: filter 0.5s ease;
 }
 
-.TrainingIntro {
-    color: red;
-    position: relative;
-    right: 60%;
-    z-index: 1; /* Higher z-index to place it above the background image */
-}
+
 
 
 .sidebar .nav-links li:hover {
@@ -227,9 +269,7 @@
     background:  #11101d;
     color: white;
     padding: 12px 0;
-
 }
-/* In your TrainingMainPage.css file */
 .custom-logout-icon {
     font-size: 5vh;
     color: white;
@@ -250,10 +290,6 @@
     font-size: 80vh;
     margin-right: 3%;
 }
-
-
-.sidebar.close .profile-details{
-}
 .sidebar.close .profile-details{
     color: white;
     right: 91%;
@@ -265,34 +301,32 @@
 }
 .sidebar .profile-details img{
     height: 52px;
-    width: 52px;
+    width: 2px;
     object-fit: cover;
     border-radius: 16px;
     margin: 0 14px 0 12px;
     background: #1d1b31;
-    transition: all 0.5s ease;
 }
 .sidebar.close .profile-details img{
     padding: 10px;
+    width: 1%;
 }
 .home-section {
     position: relative;
     height: 20vh;
     z-index: 1;
-    color: #fff;
+    color: black;
     left: 20%;
     width: calc(50% - 60px);
-    transition: all 0.5s ease;
 }
 
 .sidebar.close ~ .home-section{
     position: relative;
-    height: 30vh;
-    color: white;
-    left: 15%;
-    top: -15vh;
-    width: 10%;
-    transition: all 0.5s ease;
+    height: 20vh;
+    z-index: 1;
+    color: black;
+    right: 100%;
+    width: calc(50% - 60px);
 }
 
 .home-section .home-content{
@@ -315,12 +349,4 @@
     font-size: 26px;
     font-weight: 60;
 }
-.intro-image{
-    position: relative;
-    z-index: 2;
-    width: 50%;
-    height:50%;
-    right: -30%;
-    top: 35vh;
-    filter: brightness(1.2) contrast(1.2);
-}
+
