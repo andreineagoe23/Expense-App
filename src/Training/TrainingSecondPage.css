@@ -1,47 +1,43 @@
-/* Google Fonts Import Link */
-/* Google Fonts Import Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 .video-button {
     background-color: #1d1b31;
     color: #fff;
-    padding: 1em 2em; /* Using em units for padding */
+    padding: 1em 2em;
     border: none;
-    border-radius: 0.5em; /* Using em units for border radius */
-    font-size: 1em; /* Using em units for font size */
+    border-radius: 0.5em;
+    font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 12%; /* Move the button 20px down from the top */
-    margin-left:52%; /* Move the button 100px to the right from the left */
+    margin-top: 12%;
+    margin-left:52%;
 }
 .next-button{
     background-color: #1d1b31;
     color: #fff;
-    padding: 0.5em 2em; /* Using em units for padding */
+    padding: 0.5em 2em;
     border: none;
-    border-radius: 0.5em; /* Using em units for border radius */
-    font-size: 1em; /* Using em units for font size */
+    border-radius: 0.5em;
+    font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 2%; /* Move the button 20px down from the top */
-    margin-left:40%; /* Move the button 100px to the right from the left */
+    margin-top: 2%;
+    margin-left:40%;
 }
 .video-button:hover {
-    background-color: #0d0b1b; /* Darken color on hover */
+    background-color: #0d0b1b;
 }
 
 .video-section video {
-    width: 90%; /* Make the video element fill its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 0.5em; /* Add border radius if desired */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+    width: 90%;
+    height: auto;
+    border-radius: 0.5em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     outline: none;
 }
 .video-section{
@@ -149,7 +145,7 @@
     width: 100vw;
     height: 100vh;
     left: 0%;
-    z-index: 0; /* Lower z-index to place it behind other elements */
+    z-index: 0;
     top: 0;
     object-fit: cover;
     filter: blur(4px);
@@ -351,4 +347,3 @@
     font-size: 26px;
     font-weight: 60;
 }
-

@@ -58,6 +58,9 @@ const TrainingSecondPage = () => {
     };
     const [sidebarOpen, setSidebarOpen] = useState(true);
     const handleArrowClick = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+
         const arrowParent = e.target.parentElement.parentElement;
         arrowParent.classList.toggle('showMenu');
     };
@@ -66,12 +69,18 @@ const TrainingSecondPage = () => {
         setSidebarOpen(!sidebarOpen);
     };
 
-    const handleSidebarClick = () => {
-        setSidebarOpen(!sidebarOpen); // Toggle sidebar visibility
+    const handleSidebarClick = (e) => {
+
+        if (e.target.tagName === 'A') {
+            e.preventDefault();
+            e.stopPropagation();
+        } else {
+            setSidebarOpen(!sidebarOpen);
+        }
     };
 
     const handleContentClick = (e) => {
-        e.stopPropagation(); // Prevent click event from bubbling up to the section
+        e.stopPropagation();
     };
 
     return (
