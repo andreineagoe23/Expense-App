@@ -49,9 +49,11 @@
     margin-top: -5%;
 }
 
-.how-to-section {
+.how-to-content {
     color: black;
     position: absolute;
+    white-space: nowrap;
+    font-size: 3vh;
     top: 40%;
     left: 57%;
     transform: translate(-50%, -50%);

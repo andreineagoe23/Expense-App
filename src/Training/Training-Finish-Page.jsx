@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './TrainingFinishPage.css';
 import { Link, useLocation } from "react-router-dom";
+import confettiVideo from './Confetti.mp4';
 import {
     BiGridAlt,
     BiCollection,
@@ -12,8 +13,6 @@ import {
     BiHelpCircle,
     BiMenu
 } from 'react-icons/bi';
-
-
 const CustomizedBiLogOut = () => {
     return (
         <BiLogOut className="custom-logout-icon" />
@@ -36,7 +35,9 @@ const CustomizedBiGridAlt = () => {
         <BiGridAlt className='custom-grid-icon' />
     )
 }
+
 const TrainingFinishPage = () => {
+    const [showVideo, setShowVideo] = useState(true);
     const [sidebarOpen, setSidebarOpen] = useState(true);
     const handleArrowClick = (e) => {
         const arrowParent = e.target.parentElement.parentElement;
@@ -161,6 +162,24 @@ const TrainingFinishPage = () => {
                 <div className="home-content">
                     <CustomizedBiMenu/>
                     <span className="text"></span>
+                </div>
+            </section>
+            <section className="confetti-section" style={{display: showVideo ? 'block' : 'none'}}>
+                <div>
+                    <video autoPlay muted>
+                        <source src={confettiVideo} type="video/mp4"/>
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Hello</p>
+                    <Link to="/login" className="login-button">Login</Link>
+
+                </div>
+            </section>
+            <section className="text-section">
+                <div className="text-content">
+                    <h2><strong>Congratulations</strong></h2>
+                    <p>You have now completed the training demo for our app and are ready to embark on the journey of expense tracking.</p>
+                    <p1>Feel free to consult this video at any time, and for further help contact us on the support page</p1>
                 </div>
             </section>
         </div>
