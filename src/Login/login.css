@@ -6,7 +6,7 @@
 }
 
 .login-background {
-  width: 40%;
+  width: 20%;
 }
 
 .login-background img {
@@ -16,12 +16,16 @@
 }
 
 .login.form {
-  width: 60%;
+  position: absolute;
+  right: 40vh;
+  bottom: 20vh;
+  width: 110vh;
   padding: 2rem;
   background: #fff;
   border-radius: 7px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
+
 
 .form header {
   font-size: 2rem;
