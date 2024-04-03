@@ -1,3 +1,4 @@
+// App.js
 import "./App.css";
 import Navbar from "./navbar.js";
 import HomePage from "./Home/homepage.js";
@@ -16,7 +17,7 @@ function App() {
         <Navbar />
       </div>
       <Routes>
-        <Route path="/home" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<RegisterForm />} />
         <Route path="/TrainingMainPage" element={<TrainingMainPage />} />

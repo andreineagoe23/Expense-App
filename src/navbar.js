@@ -40,7 +40,7 @@ function Navbar() {
       <div className="navbar-middle">
         <ul id="navbar">
           <li>
-            <Link to="/home">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <Link to="/TrainingMainPage">Training Course</Link>
