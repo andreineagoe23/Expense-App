@@ -159,12 +159,12 @@ const TrainingMainPage = () => {
                         </ul>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="/SupportCenter">
                             <BiHelpCircle/>
                             <span className="link_name">Support</span>
                         </a>
                         <ul className="sub-menu blank">
-                            <li><a className="link_name" href="#">Support</a></li>
+                            <li><a className="link_name" href="/SupportCenter">Support</a></li>
                         </ul>
                     </li>
                     <li>

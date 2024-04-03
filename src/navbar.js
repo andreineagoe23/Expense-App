@@ -49,7 +49,7 @@ function Navbar() {
             <Link to="/expense">Expense</Link>
           </li>
           <li>
-            <Link to="/support">Support</Link>
+            <Link to="/SupportCenter">Support</Link>
           </li>
         </ul>
       </div>

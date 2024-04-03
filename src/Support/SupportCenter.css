@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
+
+body {
+    overflow: hidden;
+}
+.Support-Bubble{
+    position: absolute;
+    width: 50%;
+    height: 99%;
+    top:1%;
+    z-index: -1;
+}
+.Support-Person{
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    top: 40%;
+}
+
+.text-container {
+    position: relative;
+}
+
+.support-text {
+    position: fixed;
+    top: 18vh;
+    left: 36vh;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Istok Web', sans-serif;
+    text-align: center;
+    width: 40%;
+}
+
+
+.contact-text {
+    position: absolute;
+    bottom: -15vh;
+    left: -22vh;
+    overflow-wrap: break-word;
+    font-family: 'Istok Web', sans-serif;
+    color: white;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 70%;
+}
+.contact-text2 {
+    position: absolute;
+    bottom: -19vh;
+    left: -18.3vh;
+    color: white;
+    font-family: 'Istok Web', sans-serif;
+    overflow-wrap: break-word;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 70%;
+}
+.contact-info-email{
+    position: absolute;
+    bottom: -86vh;
+    left: -20.4vh;
+    color: white;
+    font-family: 'Istok Web', sans-serif;
+    overflow-wrap: break-word;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 70%;
+}
+.contact-info-location{
+    position: absolute;
+    bottom: -90vh;
+    left: -25vh;
+    color: white;
+    font-family: 'Istok Web', sans-serif;
+    overflow-wrap: break-word;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 70%;
+}
+.contact-form {
+    position: absolute;
+    bottom: 25vh;
+    right: 25vh;
+    font-family: 'Istok Web', sans-serif;
+    width: 30%;
+}
+
+.form-group {
+    margin-bottom: 2vh;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 1vh;
+    border: 0.1vh solid #ccc;
+    border-radius: 1vh;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 15vh;
+}
+
+button {
+    background-color: #1d1b31;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0d0b1b;
+}
+
+@media screen and (min-width: 768px) {
+.body{
+    overflow: auto;
+}
+    .text-container {
+
+        left: 20%;
+    }
+
+
+}

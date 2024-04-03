@@ -7,6 +7,8 @@ import RegisterForm from "./Register/register.js";
 import TrainingMainPage from "./Training/Training-Main-Page";
 import TrainingSecondPage from "./Training/Training-Second-Page";
 import TrainingFinishPage from "./Training/Training-Finish-Page";
+import SupportCenter from "./Support/Support-Center";
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Route path = "/TrainingMainPage" element={<TrainingMainPage/>}/>
           <Route path = "/TrainingSecondPage" element={<TrainingSecondPage/>}/>
           <Route path = "/TrainingFinishPage" element={<TrainingFinishPage/>}/>
+          <Route path = "/SupportCenter" element={<SupportCenter/>}/>
       </Routes>
     </BrowserRouter>
   );
