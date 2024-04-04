@@ -7,6 +7,9 @@
 
 .login-background {
   width: 40%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .login-background img {

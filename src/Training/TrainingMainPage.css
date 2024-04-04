@@ -7,304 +7,47 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.sidebar.close .nav-links li a .link_name,
-.sidebar.close .nav-links li .sub-menu a,
-.sidebar.close .nav-links li i {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.sidebar.close .profile-details i,
-.sidebar.close .profile-details .profile_name,
-.sidebar.close .profile-details .job {
-    display: flex;
-}
-
-.sidebar {
-    position: fixed;
-    height: 100%;
-    width: 20%;
-    background: #11101d;
-    z-index: 1;
-    transition: all 0.5s ease;
-}
-
-.sidebar.close {
-    position: fixed;
-    width: 15%;
-    z-index: 1;
-    transition: all 0.5s ease;
-
-}
-
-.sidebar .logo-details {
-    height: 10%;
-    width: 100%;
-    display: flex;
-    color: white;
-    align-items: center;
-}
-
-.sidebar .logo-details i {
-    font-size: 2rem;
-    color: #fff;
-    height: 50px;
-    min-width: 78px;
-    text-align: center;
-    line-height: 50px;
-}
-
-.sidebar .logo-details .logo_name {
-    font-size: 1.5rem;
-    color: #fff;
-    font-weight: 600;
-    transition: 0.3s ease;
-    transition-delay: 0.1s;
-}
-
-.sidebar.close .logo-details .logo_name {
-    transition-delay: 0s;
-    opacity: 0;
-}
-.sidebar .nav-links {
-    height: 100%;
-    width: 70%;
-    padding: 5% 0 60% 0;
-    overflow: auto;
-    color: white;
-}
-
-.sidebar.close .nav-links {
-    overflow: visible;
-}
-
-.sidebar .nav-links li {
-    position: relative;
-    list-style: none;
-    transition: all 0.4s ease;
-}
-
-.container {
-    position: relative;
-    display: inline-block;
-}
-
 .background-image {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    z-index: 0;
+    z-index: -1;
     top: 0;
     object-fit: cover;
     filter: blur(4px);
     transition: filter 0.5s ease;
 }
-.sidebar .nav-links li:hover {
-    background: #1d1b31;
-}
 
-.sidebar .nav-links li .icon-link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.sidebar.close .nav-links li .icon-link {
-    display: block;
-}
-
-.sidebar .nav-links li i {
-    height: 10%;
-    min-width: 20%;
-    text-align: center;
-    line-height: 50px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.sidebar .nav-links li.showMenu i.arrow {
-    transform: rotate(-180deg);
-
-}
-
-.sidebar .nav-links li a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-}
-
-.sidebar .nav-links li a .link_name {
-    font-size: 5vh;
-    color: #fff;
-    transition: all 0.4s ease;
-}
-
-.sidebar.close .nav-links li a .link_name {
-    opacity: 0;
-}
-
-.sidebar .nav-links li .sub-menu {
-    padding: 0.3rem 0.3rem 0.7rem 2rem;
-    margin-top: -0.5rem;
-    background: #1d1b31;
-    display: none;
-}
-
-.sidebar .nav-links li.showMenu .sub-menu {
-    display: block;
-}
-
-.sidebar .nav-links li .sub-menu a {
-    color: #fff;
-    font-size: 120%;
-    padding: 0.2rem 0;
-    white-space: nowrap;
-    opacity: 5;
-    transition: all 0.3s ease;
-}
-
-.sidebar .nav-links li .sub-menu a:hover {
-    opacity: 1;
-    color: gray;
-}
-
-.sidebar.close .nav-links li .sub-menu {
+.intro-text {
     position: absolute;
+    top: 50%; /* Center vertically */
     left: 50%;
-    top: -0.5rem;
-    padding: 0.5rem 1rem;
-    border-radius: 0 0.5rem 0.5rem 0;
-    opacity: 0;
-    display: block;
-    pointer-events: none;
-}
-
-.sidebar.close .nav-links li:hover .sub-menu {
-    opacity: 1;
-    pointer-events: auto;
-    transition: all 0.3s ease;
-}
-
-.sidebar .nav-links li .sub-menu .link_name {
-    display: none;
-
-}
-.sidebar.close .nav-links li .sub-menu .link_name{
-    font-size: 140%;
-    opacity: 1;
-    display: block;
-}
-
-.sidebar .nav-links li:hover .sub-menu.blank{
-    top: 50%;
-    transform: translateY(-50%);
-}
-.sidebar .profile-details{
-    position: fixed;
-    bottom: 0;
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background:  #11101d;
-    color: white;
-    padding: 12px 0;
-
-}
-/* In your TrainingMainPage.css file */
-.custom-logout-icon {
-    font-size: 5vh;
-    color: white;
-    position: relative;
-    left: 24%;
-}
-.custom-face-icon{
-    color: #fff;
-    position: relative;
-    left: 2%;
-    font-size: 5vh;
-    margin-right: 3%;
-}
-.sidebar.close.custom-grid-icon{
-    color: #fff;
-    position: relative;
-    left: 5%;
-    font-size: 80vh;
-    margin-right: 3%;
-}
-
-
-.sidebar.close .profile-details{
-}
-.sidebar.close .profile-details{
-    color: white;
-    right: 91%;
-    height: auto;
-}
-.sidebar .profile-details .profile-content{
-    display: flex;
-    align-items: center;
-}
-.sidebar .profile-details img{
-    height: 52px;
-    width: 52px;
-    object-fit: cover;
-    border-radius: 16px;
-    margin: 0 14px 0 12px;
-    background: #1d1b31;
-    transition: all 0.5s ease;
-}
-.sidebar.close .profile-details img{
-    padding: 10px;
-}
-.home-section {
-    position: relative;
-    height: 20vh;
+    transform: translate(-50%, -50%);
+    text-align: center;
     z-index: 1;
-    color: #fff;
-    left: 20%;
-    width: calc(50% - 60px);
-    transition: all 0.5s ease;
-}
-
-.sidebar.close ~ .home-section{
-    position: relative;
-    height: 30vh;
     color: white;
-    left: 15%;
-    top: -15vh;
-    width: 10%;
-    transition: all 0.5s ease;
+    cursor: pointer; 
 }
 
-.home-section .home-content{
-    height: 10vh;
-    display: flex;
-    align-items: center;
+.skip-page {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 1;
+    text-align: right;
 }
-.custom-menu-icon{
-    font-size: 200%;
-}
-.home-section .home-content .bx-menu,
-.home-section .home-content .text{
-    font-size: 35px;
-}
-.home-section .home-content .bx-menu{
-    margin: 0 15px;
+
+.next-page button {
+    background-color: #1d1b31;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-.home-section .home-content .text{
-    font-size: 26px;
-    font-weight: 60;
-}
-.intro-image{
-    position: relative;
-    z-index: 2;
-    width: 50%;
-    height:50%;
-    right: -30%;
-    top: 35vh;
-    filter: brightness(1.2) contrast(1.2);
+
+.next-page button:hover {
+    background-color: #0d0b1b;
 }

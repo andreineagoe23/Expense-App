@@ -3,24 +3,44 @@ nav {
   color: white;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between; /* Adjusted to distribute space evenly */
+  align-items: center; /* Center items horizontally */
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 200px;
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.navbar-left {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .navbar-left img {
-  width: 50px; 
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.current-user {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
 }
 
 #navbar {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 #navbar li {
-  padding: 0 20px;
+  padding: 10px 0; /* Adjust padding */
 }
 
 #navbar li a {
@@ -37,14 +57,15 @@ nav {
 
 #login {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 #login li {
-  padding: 0 10px;
+  padding: 10px; /* Adjust padding */
 }
 
 #login a {
@@ -62,7 +83,7 @@ nav {
 #register-btn {
   background-color: #61ddb4;
   color: white;
-  padding: 10px 20px;
+  padding: 8px 16px; /* Adjust button padding */
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s ease-in-out;

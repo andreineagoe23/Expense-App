@@ -5,27 +5,15 @@ import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
   const location = useLocation();
-  const isTrainingMainPage = location.pathname === "/TrainingMainPage";
-  const isTrainingSecondPage = location.pathname === "/TrainingSecondPage";
-  const isTrainingFinishPage = location.pathname === "/TrainingFinishPage";
+  const currentUser = "John Doe";
+  
   const isLoginPage = location.pathname === "/login";
-  const isRegisterPage = location.pathname === "/register";
-
   if (isLoginPage) {
     return null;
   }
 
+  const isRegisterPage = location.pathname === "/register";
   if (isRegisterPage) {
-    return null;
-  }
-
-  if (isTrainingMainPage) {
-    return null;
-  }
-  if (isTrainingSecondPage) {
-    return null;
-  }
-  if (isTrainingFinishPage) {
     return null;
   }
 
@@ -35,6 +23,7 @@ function Navbar() {
         <Link to="/homepage">
           <img src={logo} alt="logo" />
         </Link>
+        <div className="current-user">{currentUser}</div>
       </div>
 
       <div className="navbar-middle">
@@ -61,7 +50,7 @@ function Navbar() {
           </li>
           <li>
             <Link id="register-btn" to="/register">
-              Become a member
+              Register
             </Link>
           </li>
         </ul>

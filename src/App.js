@@ -15,16 +15,18 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Navbar />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<RegisterForm />} />
+            <Route path="/TrainingMainPage" element={<TrainingMainPage />} />
+            <Route path="/TrainingSecondPage" element={<TrainingSecondPage />} />
+            <Route path="/TrainingFinishPage" element={<TrainingFinishPage />} />
+            <Route path="/SupportCenter" element={<SupportCenter />} />
+          </Routes>
+        </div>
       </div>
-      <Routes>
-      <Route path="/" element={<HomePage />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<RegisterForm />} />
-        <Route path = "/TrainingMainPage" element={<TrainingMainPage/>}/>
-          <Route path = "/TrainingSecondPage" element={<TrainingSecondPage/>}/>
-          <Route path = "/TrainingFinishPage" element={<TrainingFinishPage/>}/>
-          <Route path = "/SupportCenter" element={<SupportCenter/>}/>
-      </Routes>
     </BrowserRouter>
   );
 }
