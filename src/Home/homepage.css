@@ -19,7 +19,7 @@
 }
 
 .right-section {
-  width: 45%;
+  width: 50%;
   padding: 20px;
 }
 
@@ -36,14 +36,13 @@
 
 .button-container {
   display: flex;
-  flex-direction: row; /* Change to row to align buttons horizontally */
+  flex-direction: row; 
 }
 
 button {
-  display: flex;
   align-items: center;
   padding: 10px 20px;
-  margin-right: 10px; /* Add margin between buttons */
+  margin-right: 10px; 
   background-color: #12385d;
   color: white;
   border: none;
@@ -57,7 +56,7 @@ button:hover {
 }
 
 .button-icon {
-  width: 24px; /* Adjust icon size */
+  width: 24px; 
   height: 24px;
   margin-right: 10px;
 }

@@ -8,13 +8,12 @@ nav {
 }
 
 .navbar-left img {
-  width: 50px; /* Adjust as needed */
+  width: 50px; 
 }
 
 #navbar {
-  flex: 1; /* This will make the middle section take up all available space */
   display: flex;
-  justify-content: center; /* Center the middle section */
+  justify-content: center;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -61,7 +60,7 @@ nav {
 }
 
 #register-btn {
-  background-color: #61ddb4; /* Your desired color */
+  background-color: #61ddb4;
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -70,5 +69,5 @@ nav {
 }
 
 #register-btn:hover {
-  background-color: #3ca285; /* Adjusted hover color */
+  background-color: #3ca285;
 }
