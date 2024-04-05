@@ -19,7 +19,7 @@ const TrainingSecondPage = () => {
                         Your browser does not support the video tag.
                     </video>
                     <Link to="/TrainingFinishPage">
-                        <button className="next-button">Next -&gt;</button>
+                        <button className="next-button">Next</button>
                     </Link>
                 </div>
             </section>
