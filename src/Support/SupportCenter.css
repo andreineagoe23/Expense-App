@@ -6,15 +6,17 @@ body {
 .Support-Bubble{
     position: absolute;
     width: 50%;
-    height: 99%;
-    top:1%;
+    height: 110%;
+    right: 40%;
+    top:-10%;
     z-index: -1;
 }
 .Support-Person{
     position: absolute;
     width: 40%;
     height: 80%;
-    top: 40%;
+    right: 45%;
+    top: 30%;
 }
 
 .text-container {
@@ -23,8 +25,8 @@ body {
 
 .support-text {
     position: fixed;
-    top: 18vh;
-    left: 36vh;
+    top: 13vh;
+    left: 62vh;
     transform: translate(-50%, -50%);
     color: white;
     font-family: 'Istok Web', sans-serif;
@@ -35,52 +37,52 @@ body {
 
 .contact-text {
     position: absolute;
-    bottom: -15vh;
-    left: -22vh;
+    bottom: -20vh;
+    left: 37vh;
     overflow-wrap: break-word;
     font-family: 'Istok Web', sans-serif;
     color: white;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 70%;
+    width: 800%;
 }
 .contact-text2 {
     position: absolute;
-    bottom: -19vh;
-    left: -18.3vh;
+    bottom: -23vh;
+    left: 40.5vh;
     color: white;
     font-family: 'Istok Web', sans-serif;
     overflow-wrap: break-word;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 70%;
+    width: 850%;
 }
 .contact-info-email{
     position: absolute;
-    bottom: -86vh;
-    left: -20.4vh;
+    bottom: -97vh;
+    left: 40vh;
     color: white;
     font-family: 'Istok Web', sans-serif;
     overflow-wrap: break-word;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 70%;
+    width: 580%;
 }
 .contact-info-location{
     position: absolute;
-    bottom: -90vh;
-    left: -25vh;
+    bottom: -97.6vh;
+    left: 70vh;
     color: white;
     font-family: 'Istok Web', sans-serif;
     overflow-wrap: break-word;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 70%;
+    width: 480%;
 }
 .contact-form {
     position: absolute;
     bottom: 25vh;
-    right: 25vh;
+    right: 15vh;
     font-family: 'Istok Web', sans-serif;
     width: 30%;
 }
@@ -108,13 +110,26 @@ textarea {
 }
 
 button {
-    background-color: #1d1b31;
+    background-color: #12385d;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+
+}
+.Help-Button{
+    background-color: #12385d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: fixed;
+    right: 58.5vh;
+    bottom: 15vh;
 }
 
 button:hover {
