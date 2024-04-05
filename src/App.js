@@ -10,7 +10,8 @@ import TrainingFinishPage from "./Training/Training-Finish-Page";
 import SupportCenter from './Support/Support-Center';
 import SupportHelp from './Support/Support-Help';
 import HomePage from "./Home/homepage.js";
-import Expense from "./Expense/expense";
+import Expense from "./Expense/expense.js";
+import Claimform from "./Claim/claim.js";
 
 function App() {
     return (
@@ -27,6 +28,7 @@ function App() {
                     <Route path="/SupportCenter" element={<SupportCenter />} />
                     <Route path="/SupportHelp" element={<SupportHelp />} />
                     <Route path="/Expense" element={<Expense />} />
+                    <Route path="/claim" element={<Claimform />} />
                 </Routes>
             </div>
         </BrowserRouter>

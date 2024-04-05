@@ -3,7 +3,6 @@ import './claim.css';
 
 
 const handleClear = () => {
-  // Clear the form fields
   document.getElementById("myForm").reset();
 };
 

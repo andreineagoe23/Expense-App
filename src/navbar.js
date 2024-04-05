@@ -1,3 +1,5 @@
+// navbar.js
+
 import "./navbar.css";
 import logo from "./logo.jpg";
 import React from "react";
@@ -28,7 +30,7 @@ function Navbar() {
           <img src={burgerIcon} alt="Burger Menu Icon" /> 
       </button>
 
-      <nav id="slide-out-navbar">
+      <nav id="slide-out-navbar" className="navbar"> {/* Added class name */}
         <div className="navbar-left">
           <Link to="/homepage">
             <img src={logo} alt="logo" />
@@ -84,4 +86,3 @@ function toggleNavbar() {
 }
 
 export default Navbar;
-

@@ -29,9 +29,19 @@ nav {
   margin-bottom: 10px;
 }
 
-#navbar {
+.navbar {
+  background-color: #12385d;
+  color: white;
+  padding: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 200px;
 }
 
 #navbar li {
