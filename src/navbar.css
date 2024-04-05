@@ -3,25 +3,41 @@ nav {
   color: white;
   padding: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 200px;
+}
+
+.navbar-left {
+  display: flex;
+  flex-direction: column;
+  place-items: center; 
 }
 
 .navbar-left img {
-  width: 50px; /* Adjust as needed */
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.current-user {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
 }
 
 #navbar {
-  flex: 1; /* This will make the middle section take up all available space */
   display: flex;
-  justify-content: center; /* Center the middle section */
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  flex-direction: column;
 }
 
 #navbar li {
-  padding: 0 20px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
 }
 
 #navbar li a {
@@ -30,6 +46,15 @@ nav {
   font-weight: 500;
   color: white;
   transition: 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+#navbar li a img {
+  filter: invert(100%) grayscale(0%) brightness(100%);
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
 }
 
 #navbar li a:hover {
@@ -38,14 +63,15 @@ nav {
 
 #login {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 #login li {
-  padding: 0 10px;
+  padding: 10px; /* Adjust padding */
 }
 
 #login a {
@@ -61,14 +87,68 @@ nav {
 }
 
 #register-btn {
-  background-color: #61ddb4; /* Your desired color */
+  background-color: #61ddb4;
   color: white;
-  padding: 10px 20px;
+  padding: 8px 16px;
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s ease-in-out;
 }
 
 #register-btn:hover {
-  background-color: #3ca285; /* Adjusted hover color */
+  background-color: #3ca285;
 }
+
+
+
+  @media screen and (max-width: 1023px) { 
+    nav {
+        width: 100px; 
+    }
+  
+    .current-user {
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+  
+    #navbar li a {
+        display: grid;
+        place-items: center;
+        height: 50px;
+    }
+  
+    #navbar li a img {
+        margin-bottom: 5px; 
+    }
+  
+    #navbar li a .link-text { 
+        
+        font-size: 0.9rem; 
+    }
+    
+    
+  }
+
+  @media screen and (max-width: 768px) { 
+    .burger-menu {
+      position: fixed; 
+      top: 20px;   
+      left: 20px;
+      border: none;
+      cursor: pointer;
+      z-index: 2;
+    }
+  
+    #slide-out-navbar {
+      position: fixed;
+      top: 0;
+      left: -250px; 
+      width: 250px;
+      height: 100vh;
+      transition: left 0.3s ease-in-out;  
+    }
+  
+    #slide-out-navbar.navbar-open {
+      left: 0; 
+    }
+  }

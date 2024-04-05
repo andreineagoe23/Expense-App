@@ -6,7 +6,10 @@
 }
 
 .login-background {
-  width: 20%;
+  width: 40%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .login-background img {
@@ -17,9 +20,10 @@
 
 .login.form {
   position: absolute;
-  right: 40vh;
-  bottom: 20vh;
-  width: 110vh;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60%;
   padding: 2rem;
   background: #fff;
   border-radius: 7px;

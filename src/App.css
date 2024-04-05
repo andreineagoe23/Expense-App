@@ -13,3 +13,13 @@ colgroup {
   background-color: #208484;
   background-color: #61ddb4;
 }
+
+.App {
+  display: flex;
+}
+
+.content {
+  padding-left: 220px; 
+  width: calc(100% - 220px); 
+}
+

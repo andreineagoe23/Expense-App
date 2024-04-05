@@ -10,21 +10,6 @@ body {
     top:1%;
     z-index: -1;
 }
-.Location-Icon {
-    position: fixed;
-    width: 2vh;
-    height: auto;
-    top: 50%;
-    left: 42%;
-    transform: translateY(-50%);
-}
-.email-Icon {
-    position: absolute;
-    width: 2vh;
-    height: auto;
-    bottom: 5.5vh;
-    left: calc(4vh + 2vh);
-}
 .Support-Person{
     position: absolute;
     width: 40%;
@@ -70,16 +55,16 @@ body {
     text-align: center;
     width: 70%;
 }
-.contact-info-email {
+.contact-info-email{
     position: absolute;
-    bottom: -87vh;
-    left: calc(-23vh + 2vh);
+    bottom: -86vh;
+    left: -20.4vh;
     color: white;
     font-family: 'Istok Web', sans-serif;
     overflow-wrap: break-word;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: calc(70% - 2vh);
+    width: 70%;
 }
 .contact-info-location{
     position: absolute;
@@ -125,28 +110,17 @@ textarea {
 button {
     background-color: #1d1b31;
     color: white;
-    padding: 0.7em 2em;
+    padding: 10px 20px;
     border: none;
-    border-radius: 0.5em;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: black;
+    background-color: #0d0b1b;
 }
-.Help-Button {
-    background-color: #1d1b31;
-    color: #fff;
-    padding: 0.7em 2em;
-    position: absolute;
-    border: none;
-    border-radius: 0.5em;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 33%;
-    margin-left:126vh;
-}
+
 @media screen and (min-width: 768px) {
 .body{
     overflow: auto;
