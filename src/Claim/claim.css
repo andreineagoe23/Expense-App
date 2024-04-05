@@ -1,0 +1,80 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    padding: 10px;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px; /* Provides spacing between the title and the form */
+  }
+  
+  form {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+  
+  label {
+    display: flex;
+    align-items: center; /* Centers label with the input */
+    margin-right: 10px; /* Space between label and input */
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="number"],
+  input[type="submit"],
+  input[type="reset"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 2px; /* Provides spacing between form elements */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't add to the width */
+  }
+  
+  button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button[type="button"] {
+    background-color: #6c757d;
+  }
+  
+  button:hover[type="button"] {
+    background-color: #545b62;
+  }
+  
+
+  @media (max-width: 960px) {
+    form {
+      grid-template-columns: 1fr; 
+    }
+  
+    label {
+      justify-content: flex-start;
+      margin-right: 0; 
+    }
+  }
+
+  
+  
