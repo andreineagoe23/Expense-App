@@ -9,6 +9,9 @@ import TrainingSecondPage from "./Training/Training-Second-Page";
 import TrainingFinishPage from "./Training/Training-Finish-Page";
 import SupportCenter from './Support/Support-Center'
 import HomePage from "./Home/homepage.js";
+import Expense from "./Expense/expense.js";
+import Claimform from "./Claim/claim.js";
+
 
 function App() {
   return (
@@ -24,6 +27,8 @@ function App() {
             <Route path="/TrainingSecondPage" element={<TrainingSecondPage />} />
             <Route path="/TrainingFinishPage" element={<TrainingFinishPage />} />
             <Route path="/SupportCenter" element={<SupportCenter />} />
+            <Route path="/expense" element={<Expense />} />
+            <Route path="/claim" element={<Claimform />} />
           </Routes>
         </div>
       </div>
