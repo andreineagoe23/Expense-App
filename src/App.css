@@ -23,9 +23,3 @@ colgroup {
   width: calc(100% - 220px); 
 }
 
-@media screen and (max-width: 768px) {
-  .content {
-    padding-left: 0;
-    width: 100%;
-  }
-}

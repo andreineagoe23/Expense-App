@@ -4,20 +4,19 @@ nav {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Adjusted to distribute space evenly */
-  align-items: center; /* Center items horizontally */
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 200px;
-  overflow-y: auto; /* Allow vertical scrolling */
 }
 
 .navbar-left {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  place-items: center; 
 }
 
 .navbar-left img {
@@ -100,15 +99,56 @@ nav {
   background-color: #3ca285;
 }
 
-@media screen and (max-width: 1023px) {
-  #navbar.medium-layout li a {
-    text-align: center;
-    display: block;
+
+
+  @media screen and (max-width: 1023px) { 
+    nav {
+        width: 100px; 
+    }
+  
+    .current-user {
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+  
+    #navbar li a {
+        display: grid;
+        place-items: center;
+        height: 50px;
+    }
+  
+    #navbar li a img {
+        margin-bottom: 5px; 
+    }
+  
+    #navbar li a .link-text { 
+        
+        font-size: 0.9rem; 
+    }
+    
+    
   }
 
-  /* Add any other necessary medium-screen styles */
-  #navbar.medium-layout {
-    flex-direction: column;
-    align-items: center;
+  @media screen and (max-width: 768px) { 
+    .burger-menu {
+      position: fixed; 
+      top: 20px;   
+      left: 20px;
+      border: none;
+      cursor: pointer;
+      z-index: 2;
+    }
+  
+    #slide-out-navbar {
+      position: fixed;
+      top: 0;
+      left: -250px; 
+      width: 250px;
+      height: 100vh;
+      transition: left 0.3s ease-in-out;  
+    }
+  
+    #slide-out-navbar.navbar-open {
+      left: 0; 
+    }
   }
-}
