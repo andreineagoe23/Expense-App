@@ -36,7 +36,7 @@ const SupportCenter = () => {
                     <label htmlFor="message">Message:</label>
                     <textarea id="message" name="message" rows="4"/>
                 </div>
-                <button type="submit">Submit</button>
+                <button type="button" onClick={() => window.location.href = '/SupportManagement.jsx'}>Submit</button>
             </form>
             <img src={supportBubble} alt='Bubble' className='Support-Bubble'/>
             <img src={supportPerson} alt='Person' className='Support-Person'/>
