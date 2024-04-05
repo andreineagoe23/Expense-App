@@ -5,7 +5,6 @@ import supportPerson from './SupportPerson.png';
 import './SupportCenter.css';
 import locationImg from './location-icon.png'
 import emailImg from './email-icon.png'
-import { Link } from "react-router-dom";
 
 const SupportCenter = () => {
     return (
