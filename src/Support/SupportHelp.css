@@ -1,0 +1,81 @@
+body {
+    overflow: hidden;
+}
+.Support-Bubble{
+    position: absolute;
+    width: 50%;
+    height: 99%;
+    top:1%;
+    z-index: -1;
+}
+.Location-Icon {
+    position: fixed;
+    width: 2vh;
+    height: auto;
+    top: 50%;
+    left: 42%;
+    transform: translateY(-50%);
+}
+.email-Icon {
+    position: absolute;
+    width: 2vh;
+    height: auto;
+    bottom: 5.5vh;
+    left: calc(4vh + 2vh);
+}
+.Support-Person{
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    top: 40%;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 20%;
+    right:10vw;
+    padding: 0.3vw;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 33vw;
+    background-color: #f0f0f0;
+    padding: 0.5vw ;
+    margin-bottom: 2vw;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.box h2 {
+    margin-bottom: 1vw;
+    font-weight: bold;
+}
+
+.box p {
+    font-size: 1.5vw;
+    color: #666;
+}
+
+
+
+button:hover {
+    background-color: black;
+}
+.Center-Button {
+    background-color: #1d1b31;
+    color: #fff;
+    padding: 0.7em 2em;
+    position: absolute;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 33%;
+    margin-left:126vh;
+}

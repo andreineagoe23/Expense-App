@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import supportBubble from './SupportBubble.png';
-import supportPerson from './SupportPerson.png';
-import './SupportCenter.css';
-import locationImg from './location-icon.png'
-import emailImg from './email-icon.png'
+import './SupportHelp.css'
+import emailImg from "./email-icon.png";
+import locationImg from "./location-icon.png";
+import supportBubble from "./SupportBubble.png";
+import supportPerson from "./SupportPerson.png";
 
-const SupportCenter = () => {
+const SupportHelp = () => {
     return (
         <div>
             <div className="text-container">
@@ -29,30 +29,34 @@ const SupportCenter = () => {
                     <p>Mile End, London</p>
                 </div>
             </div>
-            <form className="contact-form">
-                <div className="form-group">
-                    <label htmlFor="fullName">Full Name:</label>
-                    <input type="text" id="fullName" name="fullName"/>
-                </div>
-                <div className="form-group">
-                    <label htmlFor="email">E-mail:</label>
-                    <input type="email" id="email" name="email"/>
-                </div>
-                <div className="form-group">
-                    <label htmlFor="message">Message:</label>
-                    <textarea id="message" name="message" rows="4"/>
-                </div>
-                <button type="submit">Submit</button>
-            </form>
+
             <img src={supportBubble} alt='Bubble' className='Support-Bubble'/>
             <img src={supportPerson} alt='Person' className='Support-Person'/>
             <img src={emailImg} alt='Person' className='email-Icon'/>
-            <Link to="/SupportHelp">
-                <button className="Help-Button">View Help Articles</button>
+            <Link to="/SupportCenter">
+                <button className="Center-Button">Go to Support Center</button>
             </Link>
 
+            <div className="boxes">
+                <div className="box">
+                    <h2>Title 1</h2>
+                    <p>Description 1</p>
+                </div>
+                <div className="box">
+                    <h2>Title 2</h2>
+                    <p>Description 2</p>
+                </div>
+                <div className="box">
+                    <h2>Title 3</h2>
+                    <p>Description 3</p>
+                </div>
+                <div className="box">
+                    <h2>Title 4</h2>
+                    <p>Description 4</p>
+                </div>
+            </div>
         </div>
     );
 }
 
-export default SupportCenter;
+export default SupportHelp;
