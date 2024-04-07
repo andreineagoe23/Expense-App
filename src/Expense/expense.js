@@ -10,7 +10,7 @@ function Expense() {
         <div className="bottom-half">
           <Link className="heading" to="/claim">Claim an expense</Link>
           <Link className="heading" to="/track-expense">Track your expense</Link>
-          <Link className="heading" to="/request-reimbursement">Request reimbursement</Link>
+          <Link className="heading" to="/reimbursement">Request reimbursement</Link>
           <Link className="heading" to="/view-reports">View your expense reports</Link>
         </div>
       </div>
