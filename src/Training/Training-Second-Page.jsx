@@ -25,7 +25,7 @@ const TrainingSecondPage = () => {
             </section>
             <section className="video-selection" style={{ display: showVideo ? 'none' : 'block' }}>
                 <div className="how-to-video">
-                    <h2 className="how-to-text">How to file an expense:</h2> {/* Added text */}
+                    <h2 className="how-to-text">How to file an expense:</h2> 
                     <span className="how-to-button"></span>
                     <button className="video-button" onClick={handleVideoButtonClick}>Watch Video</button>
                 </div>

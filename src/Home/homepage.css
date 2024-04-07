@@ -66,6 +66,10 @@ button:hover {
   font-size: 16px;
 }
 
+.button-subtext {
+  display: block;
+}
+
 .right-section h2 {
   font-size: 30px;
   margin-bottom: 20px;
@@ -73,7 +77,7 @@ button:hover {
 
 .footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
   margin-top: 50px;
 }
