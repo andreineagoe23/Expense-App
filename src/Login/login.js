@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./login.css";
 import loginBackground from "./login.jpeg";
 import { auth, signInWithEmailAndPassword } from "../firebase";
-import SupportPage from '../Support/Support-Center';
 import TrainingMainPage from "../Training/Training-Main-Page";
 
 const Login = () => {
