@@ -8,20 +8,22 @@ body {
     top:1%;
     z-index: -1;
 }
+
+/*test***/
 .Location-Icon {
-    position: fixed;
+    position: absolute;
     width: 2vh;
     height: auto;
-    top: 50%;
+    top: 0%;
     left: 42%;
-    transform: translateY(-50%);
+    transform: translateX(-150%);
 }
 .email-Icon {
     position: absolute;
     width: 2vh;
     height: auto;
-    bottom: 5.5vh;
-    left: calc(4vh + 2vh);
+    bottom: 0.6vh;
+    right: 10px;
 }
 .Support-Person{
     position: absolute;

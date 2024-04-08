@@ -2,20 +2,23 @@
 
 body {
     overflow: hidden;
-}  
-  .Support-Bubble {
+}
+.Support-Bubble{
     position: absolute;
-    right: 38%;
-  }
-  
-  .Support-Person {
-    position: absolute; 
+    width: 50%;
+    height: 110%;
+    right: 40%;
+    top:-10%;
+    z-index: -1;
+}
+
+.Support-Person{
+    position: absolute;
     width: 40%;
     height: 80%;
-    left: 15%;
-    top: 40%;
-  }
-  
+    right: 45%;
+    top: 30%;
+}
 
 .text-container {
     position: relative;
@@ -23,12 +26,12 @@ body {
 
 .support-text {
     position: fixed;
-    top: 30vh;
-    left: 68vh;
+    top: 27vh;
+    left: 52vh;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 0.8em;
     font-family: 'Istok Web', sans-serif;
+    font-size: 90%;
     text-align: center;
     width: 40%;
 }
@@ -56,10 +59,33 @@ body {
     text-align: center;
     width: 850%;
 }
-
+.contact-info-email{
+    position: absolute;
+    bottom: -96vh;
+    left: 40vh;
+    color: white;
+    font-family: 'Istok Web', sans-serif;
+    overflow-wrap: break-word;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 580%;
+    display: flex;
+}
+.contact-info-location{
+    position: absolute;
+    bottom: -98vh;
+    left: 40vh;
+    color: white;
+    font-family: 'Istok Web', sans-serif;
+    overflow-wrap: break-word;
+    transform: translateX(50%);
+    text-align: center;
+    width: 480%;
+    white-space: nowrap;
+}
 .contact-form {
     position: absolute;
-    bottom: 15vh;
+    bottom: 25vh;
     right: 15vh;
     font-family: 'Istok Web', sans-serif;
     width: 30%;
@@ -105,9 +131,9 @@ button {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    position: absolute;     
-    left: 72%;  
-    top: 10%; 
+    position: fixed;
+    right: 30vh;
+    bottom: 15vh;
 }
 
 button:hover {
