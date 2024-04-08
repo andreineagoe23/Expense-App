@@ -1,2 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+const GeneralQueries = () => {
+    return (
+        <div className="Question1"> 
+           <h1>Hello</h1>
+        </div>
+    );
+}
+
+export default GeneralQueries;

@@ -9,6 +9,8 @@ import TrainingSecondPage from "./Training/Training-Second-Page";
 import TrainingFinishPage from "./Training/Training-Finish-Page";
 import SupportCenter from './Support/Support-Center';
 import SupportHelp from './Support/Support-Help';
+import GeneralQueries from "./Support/GeneralQueries";
+import FinancialQueries from "./Support/FinancialQueries";
 import HomePage from "./Home/homepage.js";
 import Expense from "./Expense/expense.js";
 import Claimform from "./Claim/claim.js";
