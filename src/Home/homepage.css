@@ -1,4 +1,6 @@
 /* homepage.css */
+
+
 .homepage {
   display: flex;
   flex-direction: column;
@@ -7,20 +9,19 @@
 
 .homepage-content {
   display: flex;
-  width: 100%;
+  flex-wrap: wrap; /* Ensure the content wraps when needed */
   justify-content: space-between;
   margin-top: 20px;
-  margin-right: -20vh;
+  padding-left: 200px;
 }
 
 .left-section {
   width: 45%;
   padding: 20px;
-  padding-left: 80px;
 }
 
 .right-section {
-  width: 60%;
+  width: 50%; 
   padding: 20px;
 }
 
@@ -43,7 +44,7 @@
 button {
   align-items: center;
   padding: 10px 20px;
-  margin-right: 10px; 
+  margin-right: 20px; 
   background-color: #12385d;
   color: white;
   border: none;
@@ -59,15 +60,21 @@ button:hover {
 .button-icon {
   width: 24px; 
   height: 24px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .button-text {
   font-size: 16px;
+  line-height: 24px;
 }
 
 .button-subtext {
   display: block;
+}
+
+.right-section img {
+  max-width: 100%; 
+  height: auto;
 }
 
 .right-section h2 {
@@ -78,6 +85,118 @@ button:hover {
 .footer {
   display: flex;
   justify-content: center;
-  width: 100%;
   margin-top: 50px;
+  padding-left: 130px;
 }
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    justify-content: center; 
+  }
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+
+  /* Styles for small screens */
+
+  .homepage-content {
+    flex-direction: column;
+    padding-left: 0; 
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%; 
+    padding: 20px;
+  }
+
+  .left-section h1 {
+    font-size: 30px;
+  }
+
+  .left-section p {
+    font-size: 16px;
+  }
+
+  .right-section h2 {
+    font-size: 20px;
+  }
+
+  .right-section img {
+    max-width: 100%; 
+    height: auto;
+  }
+
+  .button-container {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  button {
+    margin-right: 0; 
+    margin-bottom: 10px; 
+  }
+
+  .footer {
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+
+  /* Styles for medium screens */
+
+  .homepage-content {
+    padding-left: 100px; /* Adjust padding for medium screens */
+  }
+
+  .left-section,
+  .right-section {
+    width: 45%; /* Adjust width for medium screens */
+    padding: 20px;
+  }
+
+  .left-section h1 {
+    font-size: 40px; /* Adjust font size for medium screens */
+  }
+
+  .left-section p {
+    font-size: 18px; /* Adjust font size for medium screens */
+  }
+
+  .right-section h2 {
+    font-size: 25px; /* Adjust font size for medium screens */
+  }
+
+  .right-section img {
+    max-width: 100%; /* Adjust image size for medium screens */
+    height: auto;
+  }
+
+  .button-container {
+    flex-direction: row; /* Revert to row layout for buttons */
+    align-items: center; 
+    justify-content: space-between; /* Add space between buttons */
+  }
+
+  button {
+    margin-right: 0; 
+    margin-bottom: 10px; 
+    margin-top: 10px;
+  }
+
+ .footer {
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center; 
+      margin-top: 10px;
+    }
+
+  }
+
