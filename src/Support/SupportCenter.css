@@ -33,7 +33,7 @@ body {
     top: 18vh;
     left: 60vh;
     transform: translate(-50%, -50%);
-    color: white;
+    color: white  !important;
     font-family: 'Istok Web', sans-serif;
     text-align: center;
     width: 40%;
@@ -41,7 +41,7 @@ body {
 
 .contact-info-email{
     position: absolute;
-    bottom: -93vh;
+    bottom: -92vh;
     left: 40vh;
     color: white;
     font-family: 'Istok Web', sans-serif;
@@ -71,9 +71,7 @@ body {
 }
 
 .form-group {
-    position: relative;
     margin-bottom: 2vh;
-    bottom: 15vh;
 }
 
 label {
@@ -88,6 +86,7 @@ textarea {
     border: 0.1vh solid #ccc;
     border-radius: 1vh;
     box-sizing: border-box;
+    margin-bottom: 2vh;
 }
 
 textarea {
@@ -95,19 +94,18 @@ textarea {
 }
 
 .submit-button {
-    background-color: #12385d;
+    background-color: #12385d !important;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    bottom: 35vh;
+    bottom: 20vh;
     position: fixed;
 
-
-
 }
+
 .Help-Button{
     background-color: #12385d;
     color: white;
@@ -117,8 +115,8 @@ textarea {
     cursor: pointer;
     transition: background-color 0.3s ease;
     position: fixed;
-    right: 58.5vh;
-    bottom: 28vh;
+    right: 56vh;
+    bottom: 12vh;
 }
 
 button:hover {

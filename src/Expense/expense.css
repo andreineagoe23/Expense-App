@@ -1,4 +1,4 @@
-/* expense.css */
+
 
 .main-content {
     display: flex;
@@ -7,8 +7,8 @@
     justify-content: center;
     height: 50vh;
     position: absolute;
-    left: 52vh;
-    top: 15vh;
+    left: -5vh;
+    top: 3vh;
   }
   
   .heading {

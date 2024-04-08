@@ -30,7 +30,7 @@ function Navbar() {
           <img src={burgerIcon} alt="Burger Menu Icon" /> 
       </button>
 
-      <nav id="slide-out-navbar" className="navbar"> {/* Added class name */}
+      <nav id="slide-out-navbar" className="navbar">
         <div className="navbar-left">
           <Link to="/homepage">
             <img src={logo} alt="logo" />
