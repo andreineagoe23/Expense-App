@@ -1,15 +1,15 @@
 import React from 'react';
-import './claim.css';
+import './reimbursement.css';
 
 
 const handleClear = () => {
   document.getElementById("myForm").reset();
 };
 
-function Claimform() {
+function Reimbursementform() {
   return (
     <>
-        <h1>Expense Claim Form</h1>
+        <h1>Reimbursement Form</h1>
         <form id="myForm" style={{ display: "flex", flexDirection: "column" }}>
         <label htmlFor="companyName">Company Name:</label>
         <input type="text" id="companyName" />
@@ -29,11 +29,8 @@ function Claimform() {
         <label htmlFor="date">Date:</label>
         <input type="date" id="date" />
 
-        <label htmlFor="category">Category:</label>
-        <input type="text" id="category" />
-
-        <label htmlFor="description">Description:</label>
-        <input type="text" id="description" />
+        <label htmlFor="category">Employee Email:</label>
+        <input type="email" id="email" />
 
         <label htmlFor="amount">Amount:</label>
         <input type="number" id="amount" />
@@ -46,4 +43,4 @@ function Claimform() {
   );
 }
 
-export default Claimform;
+export default Reimbursementform;

@@ -1,0 +1,29 @@
+/* expense.css */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 70px); 
+    width: 100%;
+    margin-left: 120px;
+  }
+    
+    .heading {
+      cursor: pointer;
+      padding: 10px 10px;
+      margin: 5px;
+      background-color: #61ddb4;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+    
+    .heading:hover {
+      background-color: #0056b3;
+    }
+
