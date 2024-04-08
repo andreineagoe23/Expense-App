@@ -4,20 +4,25 @@ body {
     overflow: hidden;
 }
 .Support-Bubble{
-    position: absolute;
+    display: flex;
+    align-items: center;
+    position: fixed;
     width: 50%;
-    height: 110%;
+    height: 130%;
     right: 40%;
-    top:-10%;
+    top:-20%;
+    transform: translateY(0%);
     z-index: -1;
 }
-.Support-Person{
+.Support-Person {
     position: absolute;
     width: 40%;
-    height: 80%;
-    right: 45%;
-    top: 30%;
+    height: 60%;
+    right: 47%;
+    top: 40%;
+    transform: translateY(-10%);
 }
+
 
 .text-container {
     position: relative;
@@ -25,8 +30,8 @@ body {
 
 .support-text {
     position: fixed;
-    top: 13vh;
-    left: 62vh;
+    top: 18vh;
+    left: 60vh;
     transform: translate(-50%, -50%);
     color: white;
     font-family: 'Istok Web', sans-serif;
@@ -34,53 +39,31 @@ body {
     width: 40%;
 }
 
-
-.contact-text {
-    position: absolute;
-    bottom: -20vh;
-    left: 37vh;
-    overflow-wrap: break-word;
-    font-family: 'Istok Web', sans-serif;
-    color: white;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 800%;
-}
-.contact-text2 {
-    position: absolute;
-    bottom: -23vh;
-    left: 40.5vh;
-    color: white;
-    font-family: 'Istok Web', sans-serif;
-    overflow-wrap: break-word;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 850%;
-}
 .contact-info-email{
     position: absolute;
-    bottom: -97vh;
+    bottom: -93vh;
     left: 40vh;
     color: white;
     font-family: 'Istok Web', sans-serif;
     overflow-wrap: break-word;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 580%;
 }
-.contact-info-location{
+
+.contact-info-email {
+    display: flex;
+    align-items: center;
+}
+
+.Email-Icon{
     position: absolute;
-    bottom: -97.6vh;
-    left: 70vh;
-    color: white;
-    font-family: 'Istok Web', sans-serif;
-    overflow-wrap: break-word;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 480%;
+    width: 3vh;
+    height: auto;
+    bottom: 8.8vh;
+    left: calc(30vh + 2vh);
 }
 .contact-form {
-    position: absolute;
+    position: fixed;
     bottom: 25vh;
     right: 15vh;
     font-family: 'Istok Web', sans-serif;
@@ -88,7 +71,9 @@ body {
 }
 
 .form-group {
+    position: relative;
     margin-bottom: 2vh;
+    bottom: 15vh;
 }
 
 label {
@@ -109,7 +94,7 @@ textarea {
     height: 15vh;
 }
 
-button {
+.submit-button {
     background-color: #12385d;
     color: white;
     padding: 10px 20px;
@@ -117,6 +102,10 @@ button {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    bottom: 35vh;
+    position: fixed;
+
+
 
 }
 .Help-Button{
@@ -129,7 +118,7 @@ button {
     transition: background-color 0.3s ease;
     position: fixed;
     right: 58.5vh;
-    bottom: 15vh;
+    bottom: 28vh;
 }
 
 button:hover {
