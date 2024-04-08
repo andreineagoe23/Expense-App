@@ -20,16 +20,17 @@
 
 .login.form {
   position: absolute;
-  right: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 60%;
+  width: 60%; /* Adjust width to fit within the right 60% */
+  max-width: 400px; 
   padding: 2rem;
   background: #fff;
   border-radius: 7px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box; 
+  right: 18%; 
 }
-
 
 .form header {
   font-size: 2rem;
