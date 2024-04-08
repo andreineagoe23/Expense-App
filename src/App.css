@@ -16,10 +16,18 @@ colgroup {
 
 .App {
   display: flex;
+  height: 100vh; 
+  overflow-y: auto;
 }
 
 .content {
-  padding-left: 220px; 
-  width: calc(100% - 220px); 
+  padding-left: 200px;
+  width: calc(100% - 200px);
 }
 
+@media screen and (max-width: 768px) {
+  .content {
+    padding-left: 0; 
+    width: 100%;
+  }
+}

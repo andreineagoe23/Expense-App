@@ -23,14 +23,20 @@ const HomePage = () => {
           <img src={GraphIcon} alt="Expense Graph" />
         </div>
       </div>
+      
       <div className="footer">
-        <Link to="/TrainingMainPage">
-          <button>
+
+        
+         <Link to="/TrainingMainPage">
+           <button>
             <TrainingIcon className="button-icon" />
             <span className="button-text">Training Course</span>
             <span className="button-subtext">12 fresh courses are waiting! Let's start now.</span>
-          </button>
-        </Link>
+           </button>
+         </Link>
+        
+
+      
         <Link to="/Expense">
           <button>
             <ExpenseIcon className="button-icon" />
@@ -38,6 +44,9 @@ const HomePage = () => {
             <span className="button-subtext">15% more this week. See details here.</span>
           </button>
         </Link>
+        
+
+        
         <Link to="/SupportCenter">
           <button>
             <SupportIcon className="button-icon" />
@@ -45,6 +54,8 @@ const HomePage = () => {
             <span className="button-subtext">Need extra? Reach out to us now.</span>
           </button>
         </Link>
+        
+
       </div>
     </div>
   );
