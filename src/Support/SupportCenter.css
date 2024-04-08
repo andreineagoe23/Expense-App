@@ -2,22 +2,20 @@
 
 body {
     overflow: hidden;
-}
-.Support-Bubble{
+}  
+  .Support-Bubble {
     position: absolute;
-    width: 50%;
-    height: 110%;
-    right: 40%;
-    top:-10%;
-    z-index: -1;
-}
-.Support-Person{
-    position: absolute;
+    right: 38%;
+  }
+  
+  .Support-Person {
+    position: absolute; 
     width: 40%;
     height: 80%;
-    right: 45%;
-    top: 30%;
-}
+    left: 15%;
+    top: 40%;
+  }
+  
 
 .text-container {
     position: relative;
@@ -25,10 +23,11 @@ body {
 
 .support-text {
     position: fixed;
-    top: 13vh;
-    left: 62vh;
+    top: 30vh;
+    left: 68vh;
     transform: translate(-50%, -50%);
     color: white;
+    font-size: 0.8em;
     font-family: 'Istok Web', sans-serif;
     text-align: center;
     width: 40%;
@@ -57,31 +56,10 @@ body {
     text-align: center;
     width: 850%;
 }
-.contact-info-email{
-    position: absolute;
-    bottom: -97vh;
-    left: 40vh;
-    color: white;
-    font-family: 'Istok Web', sans-serif;
-    overflow-wrap: break-word;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 580%;
-}
-.contact-info-location{
-    position: absolute;
-    bottom: -97.6vh;
-    left: 70vh;
-    color: white;
-    font-family: 'Istok Web', sans-serif;
-    overflow-wrap: break-word;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 480%;
-}
+
 .contact-form {
     position: absolute;
-    bottom: 25vh;
+    bottom: 15vh;
     right: 15vh;
     font-family: 'Istok Web', sans-serif;
     width: 30%;
@@ -127,9 +105,9 @@ button {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    position: fixed;
-    right: 58.5vh;
-    bottom: 15vh;
+    position: absolute;     
+    left: 72%;  
+    top: 10%; 
 }
 
 button:hover {
