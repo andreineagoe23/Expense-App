@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './SupportHelp.css'
+import './SupportCenter.css'
 import emailImg from "./email-icon.png";
 import locationImg from "./location-icon.png";
 import supportBubble from "./SupportBubble.png";
@@ -38,22 +39,30 @@ const SupportHelp = () => {
             </Link>
 
             <div className="boxes">
-                <div className="box">
-                    <h2>Title 1</h2>
-                    <p>Description 1</p>
-                </div>
-                <div className="box">
-                    <h2>Title 2</h2>
-                    <p>Description 2</p>
-                </div>
-                <div className="box">
-                    <h2>Title 3</h2>
-                    <p>Description 3</p>
-                </div>
-                <div className="box">
-                    <h2>Title 4</h2>
-                    <p>Description 4</p>
-                </div>
+            <Link to= "/GeneralQueries">
+                <button className="box">
+                    <h2>FAQ 1</h2>
+                    <p>General Queries</p>
+                </button>
+            </Link>
+            <Link to="/FinancialQueries">
+                <button className="box">
+                    <h2>FAQ 2</h2>
+                    <p>Financial Queries</p>
+                </button>
+            </Link>
+            <Link to= "/Troubleshooting Queries">
+                <button className="box">
+                    <h2>FAQ 3</h2>
+                    <p>TroubleShooting Queries</p>
+                </button>
+            </Link>
+            <Link to= "/SecurityQueries">
+                <button className="box">
+                    <h2>FAQ 4</h2>
+                    <p>Security Queries</p>
+                </button>
+            </Link>
             </div>
         </div>
     );
