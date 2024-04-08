@@ -1,8 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; // Add this import statement
 import supportBubble from './SupportBubble.png';
 import supportPerson from './SupportPerson.png';
 import './SupportCenter.css';
+import locationImg from './location-icon.png'
+import emailImg from './email-icon.png'
 
 const SupportCenter = () => {
     return (
@@ -11,13 +13,11 @@ const SupportCenter = () => {
                 <div className="support-text">
                     <h1>Welcome to the Support Center</h1>
                 </div>
+                <div className="contact-info-email">
+                    <p>expenseapp@gmail.com</p>
+                </div>
+
             </div>
-
-           
-  <img src={supportBubble} alt='Bubble' className='Support-Bubble'/>
-  <img src={supportPerson} alt='Person' className='Support-Person'/>
-
-
             <form className="contact-form">
                 <div className="form-group">
                     <label htmlFor="fullName">Full Name:</label>
@@ -31,12 +31,17 @@ const SupportCenter = () => {
                     <label htmlFor="message">Message:</label>
                     <textarea id="message" name="message" rows="4"/>
                 </div>
-                <button type="button" onClick={() => window.location.href = '/SupportManagement.jsx'}>Submit</button>
+                <button type="button" className="submit-button"
+                        onClick={() => window.location.href = '/SupportManagement.jsx'}>Submit
+                </button>
             </form>
-        
+            <img src={supportBubble} alt='Bubble' className='Support-Bubble'/>
+            <img src={supportPerson} alt='Person' className='Support-Person'/>
+            <img src={emailImg} alt='Person' className='Email-Icon'/>
             <Link to="/SupportHelp">
                 <button className="Help-Button">View Help Articles</button>
             </Link>
+
         </div>
     );
 }
