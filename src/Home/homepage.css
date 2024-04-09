@@ -1,6 +1,5 @@
 /* homepage.css */
 
-
 .homepage {
   display: flex;
   flex-direction: column;
@@ -36,12 +35,12 @@
   margin-bottom: 20px;
 }
 
-.button-container {
+.home-button-container {
   display: flex;
   flex-direction: row; 
 }
 
-button {
+.homepage-button {
   align-items: center;
   padding: 10px 20px;
   margin-right: 20px; 
@@ -53,11 +52,11 @@ button {
   transition: background-color 0.3s ease-in-out;
 }
 
-button:hover {
+.homepage-button:hover {
   background-color: #006653;
 }
 
-.button-icon {
+.home-button-icon {
   width: 24px; 
   height: 24px;
   margin-right: 5px;
@@ -89,6 +88,10 @@ button:hover {
   padding-left: 130px;
 }
 
+.footer button {
+  width: auto;
+  margin-right: 50px;
+}
 @media screen and (min-width: 1024px) {
   .footer {
     justify-content: center; 
@@ -128,12 +131,12 @@ button:hover {
     height: auto;
   }
 
-  .button-container {
-    flex-direction: column; 
+  .home-button-container {
+    flex-direction: row; 
     align-items: center; 
   }
 
-  button {
+  .homepage-button {
     margin-right: 0; 
     margin-bottom: 10px; 
   }
@@ -145,7 +148,12 @@ button:hover {
     align-items: center;
     margin-top: 10px;
   }
-
+  
+  .footer button {
+    width: 350px;
+    margin-right: 0; 
+    margin-bottom: 10px; 
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
@@ -179,24 +187,29 @@ button:hover {
     height: auto;
   }
 
-  .button-container {
+  .home-button-container {
     flex-direction: row; /* Revert to row layout for buttons */
     align-items: center; 
     justify-content: space-between; /* Add space between buttons */
   }
 
-  button {
+  .homepage-button {
     margin-right: 0; 
     margin-bottom: 10px; 
     margin-top: 10px;
   }
 
- .footer {
-      flex-direction: column; 
-      justify-content: center; 
-      align-items: center; 
-      margin-top: 10px;
-    }
-
+  .footer {
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px;
   }
 
+  .footer button {
+    width: 350px;
+    margin-right: 0; 
+    margin-bottom: 10px; 
+  }
+
+}
