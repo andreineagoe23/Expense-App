@@ -57,6 +57,15 @@ const GeneralQueries = () => {
           margin-top: 20px;
         }
 
+        .Box {
+          display: flex;
+          width: 90%;
+          margin-bottom: 50px;
+          max-width: 12504px;
+          flex-direction: column;
+        }
+
+
         .faq1 {
           font-family: Inter, sans-serif;
           margin-top: 25px;
