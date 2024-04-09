@@ -6,27 +6,27 @@ const GeneralQueries = () => {
     <>
      <div className="GeneralQueries">
         <div className="GQ">General Enquires</div>
-        <div className="Box">
-          <div className="faq1">
+        <div className="gq-box">
+          <div className="gq-faq1">
             How can I track my expenses on the website?
             <br />
           </div>
-          <div className="ans1">
+          <div className="gq-ans1">
             To track your expenses, you can create an account on our website and
             use our expense tracking tools. Simply log in to your account, <br/>add
             your expenses, categorize them, and monitor your spending over time.
           </div>
-          <div className="faq2">Who can use the expense web app ?</div>
-          <div className="ans2">
+          <div className="gq-faq2">Who can use the expense web app ?</div>
+          <div className="gq-ans2">
             Our web app is intended for anyone who wants to track and manage
             their personal or business expenses. This could include <br/> individuals,
             small business owners, freelancers, or teams within larger
             organizations.
           </div>
-          <div className="faq3">
+          <div className="gq-faq3">
             How do I reset my password ?<br />
           </div>
-          <div className="ans3">
+          <div className="gq-ans3">
             To reset your password on the expense web app, follow these steps:
             <br />
             Click on the 'Forgot Password' link.
@@ -57,7 +57,7 @@ const GeneralQueries = () => {
           margin-top: 20px;
         }
 
-        .Box {
+        .gq-box {
           display: flex;
           width: 90%;
           margin-bottom: 50px;
@@ -66,32 +66,32 @@ const GeneralQueries = () => {
         }
 
 
-        .faq1 {
+        .gq-faq1 {
           font-family: Inter, sans-serif;
           margin-top: 25px;
         }
     
-        .ans1 {
+        .gq-ans1 {
           margin-top: 30px;
           font: 22px Inter, sans-serif;
         }
     
-        .faq2 {
+        .gq-faq2 {
           font-family: Inter, sans-serif;
           margin-top: 107px;
         }
   
-        .ans2 {
+        .gq-ans2 {
           margin-top: 24px;
           font: 22px Inter, sans-serif;
         }
   
-        .faq3 {
+        .gq-faq3 {
           font-family: Inter, sans-serif;
           margin-top: 94px;
         }
 
-        .ans3 {
+        .gq-ans3 {
           margin-top: 21px;
           font: 22px Inter, sans-serif;
         }

@@ -11,6 +11,8 @@ import SupportCenter from './Support/Support-Center';
 import SupportHelp from './Support/Support-Help';
 import GeneralQueries from "./Support/GeneralQueries.jsx";
 import FinancialQueries from "./Support/FinancialQueries";
+import TroubleshootingQueries from "./Support/TroubleshottingQueries.jsx";
+import SecurityQueries from "./Support/SecurityQueries.jsx";
 import HomePage from "./Home/homepage.js";
 import Expense from "./Expense/expense.js";
 import Claimform from "./Claim/claim.js";
@@ -32,6 +34,8 @@ function App() {
                     <Route path="/SupportHelp" element={<SupportHelp />} />
                     <Route path="/GeneralQueries" element={<GeneralQueries /> }/>
                     <Route path="/FinancialQueries" element={<FinancialQueries /> }/>
+                    <Route path="/TroubleshootingQueries" element={<TroubleshootingQueries />} />
+                    <Route path="/SecurityQueries" element={<SecurityQueries />} />
                     <Route path="/Expense" element={<Expense />} />
                     <Route path="/claim" element={<Claimform />} />
                     <Route path="/reimbursement" element={<Reimbursementform />} />
