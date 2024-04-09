@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import './SupportHelp.css'
 import './SupportCenter.css'
 import emailImg from "./email-icon.png";
-import locationImg from "./location-icon.png";
 import supportBubble from "./SupportBubble.png";
 import supportPerson from "./SupportPerson.png";
 
@@ -33,7 +32,8 @@ const SupportHelp = () => {
                 <h2>FAQ 1</h2>
                 <p>General Queries</p>
             </button>
-        </Link><Link to="/FinancialQueries">
+            </Link>
+            <Link to="/FinancialQueries">
                 <button className="box">
                     <h2>FAQ 2</h2>
                     <p>Financial Queries</p>

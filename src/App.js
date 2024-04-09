@@ -9,7 +9,7 @@ import TrainingSecondPage from "./Training/Training-Second-Page";
 import TrainingFinishPage from "./Training/Training-Finish-Page";
 import SupportCenter from './Support/Support-Center';
 import SupportHelp from './Support/Support-Help';
-import GeneralQueries from "./Support/GeneralQueries";
+import GeneralQueries from "./Support/GeneralQueries.jsx";
 import FinancialQueries from "./Support/FinancialQueries";
 import HomePage from "./Home/homepage.js";
 import Expense from "./Expense/expense.js";
@@ -30,6 +30,8 @@ function App() {
                     <Route path="/TrainingFinishPage" element={<TrainingFinishPage />} />
                     <Route path="/SupportCenter" element={<SupportCenter />} />
                     <Route path="/SupportHelp" element={<SupportHelp />} />
+                    <Route path="/GeneralQueries" element={<GeneralQueries /> }/>
+                    <Route path="/FinancialQueries" element={<FinancialQueries /> }/>
                     <Route path="/Expense" element={<Expense />} />
                     <Route path="/claim" element={<Claimform />} />
                     <Route path="/reimbursement" element={<Reimbursementform />} />
