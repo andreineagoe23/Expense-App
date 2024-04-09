@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Add this import statement
+import { Link } from "react-router-dom";
 import supportBubble from './SupportBubble.png';
 import supportPerson from './SupportPerson.png';
 import './SupportCenter.css';
@@ -13,10 +13,11 @@ const SupportCenter = () => {
                     <h1>Welcome to the Support Center</h1>
                 </div>
                 <div className="contact-info-email">
+                    <img src={emailImg} alt='Email' className='email-icon'/>
                     <p>expenseapp@gmail.com</p>
                 </div>
-
             </div>
+
             <form className="contact-form">
                 <div className="form-group">
                     <label htmlFor="fullName">Full Name:</label>
@@ -34,13 +35,18 @@ const SupportCenter = () => {
                         onClick={() => window.location.href = '/SupportManagement.jsx'}>Submit
                 </button>
             </form>
-            <img src={supportBubble} alt='Bubble' className='Support-Bubble'/>
-            <img src={supportPerson} alt='Person' className='Support-Person'/>
-            <img src={emailImg} alt='Person' className='Email-Icon'/>
-            <Link to="/SupportHelp">
-                <button className="Help-Button">View Help Articles</button>
-            </Link>
 
+            <div className="support-images-container">
+                <img src={supportBubble} alt='Bubble' className='Support-Bubble'/>
+                <img src={supportPerson} alt='Person' className='Support-Person'/>
+            </div>
+
+            <div className="button-container">
+                <Link to="/SupportHelp">
+                    <button className="Help-Button">Help Articles</button>
+                </Link>
+                <button className="Live-Chat-Button">Live Chat</button>
+            </div>
         </div>
     );
 }
