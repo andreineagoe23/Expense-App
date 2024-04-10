@@ -1,0 +1,33 @@
+/* Parent container */
+.home {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  width: 100%; /* Ensure it spans the full width */
+  /* Removed the height and vertical centering properties */
+}
+
+/* Workout Details container */
+.workout-details {
+  
+  background-color: #f7f7f7; /* Light grey background */
+  border: 1px solid #e1e1e1; /* Solid border with a light grey color */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px; /* Padding inside the container */
+  margin-bottom: 15px; /* Margin at the bottom */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow to lift the element off the page */
+  display: flex; /* Use flexbox to layout children side by side */
+  gap: 20px; /* Adds space between items */
+  /* No changes needed here from your previous setup */
+}
+
+.workout-details p {
+  color: #666; /* Medium grey color for paragraph */
+  line-height: 1.5; /* Makes text more readable */
+  /* Removed the flex: 1; to prevent paragraphs from stretching too much */
+  white-space: nowrap; /* Prevents text within paragraphs from wrapping */
+}
+
+.workout-details strong {
+  color: #000; /* Black color for strong text */
+}
