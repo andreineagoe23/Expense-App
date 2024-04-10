@@ -1,6 +1,7 @@
 body {
     overflow: hidden;
 }
+
 .Support-Bubble2{
     display: flex;
     align-items: center;
@@ -13,7 +14,6 @@ body {
     z-index: -1;
 }
 
-/*test****/
 .Location-Icon {
     position: absolute;
 }
@@ -72,12 +72,10 @@ body {
     color: #666;
 }
 
-
-
-button:hover {
-    background-color: black;
-}
 .Center-Button {
+    height: 5vh;
+    width: auto;
+    padding: 5px;
     position: relative;
     background-color: #12385d;
     color: #fff;
@@ -86,6 +84,19 @@ button:hover {
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-left: 20vh;
+    margin-top: 20px;
+}
+.Policies-Button{
+    height: 5vh;
+    width: 23vh;
+    padding: 5px;
+    position: relative;
+    background-color: #12385d;
+    color: #fff;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     margin-top: 20px;
 }

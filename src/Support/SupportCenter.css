@@ -31,7 +31,7 @@
     color: white;
     font-family: 'Istok Web', sans-serif;
     width: auto;
-    margin-top: 10vh; 
+    margin-top: 14vh; 
     margin-bottom: 12vh;
 }
 
@@ -39,7 +39,7 @@
     display: flex;
     color: white;
     font-family: 'Istok Web', sans-serif;
-    text-align: center; /* Center align the email container */
+    text-align: center;
 }
 
 .email-icon {
@@ -101,6 +101,7 @@ textarea {
     transition: background-color 0.3s ease;
     width: 100%;
     margin-top: 10px;
+    height: 40px;
 }
 
 .button-container {
@@ -119,17 +120,64 @@ textarea {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-left: 20px;
-    width: auto; /* Set width to auto for responsiveness */
+    width: auto; 
 }
 
 .Live-Chat-Button:hover, .Help-Button:hover {
     background-color: #0d0b1b;
 }
 
-@media (max-width: 767px) {
+
+@media (max-width: 440px) {
+    
+    .Support-Bubble {
+        width: 100%; 
+        right: 0; 
+        top: -15%; 
+    }
+
+    .Support-Person {
+        overflow: hidden;
+    }
+
+    .support-text {
+        width: 100%;
+        font-size: 0.5em;
+        margin-top: 6vh;
+        margin-left: 9vh;
+    }
+
+    .contact-form-container {
+        margin-top: 20px;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+
+    .button-container {
+        width: 100%;
+        margin-right: 2vh;
+    }
+
+    .contact-info-email {
+        font-size: 0.7em;
+        margin-top: 50vh;
+        margin-left: 10vh;
+    }
+
+    .email-icon {
+        width: 20px;
+        height: 15px;
+    }
+
+    
+}
+
+@media (min-width: 441px) and (max-width: 767px) {
 
     .support-container {
-        margin-right: 0;
+        margin: 0;
     }
 
     .Support-Bubble {
@@ -139,29 +187,38 @@ textarea {
     }
 
     .Support-Person {
-        max-width: 80%; 
+        overflow: hidden;
     }
 
     .support-text {
-        margin-top: 5vh;
-        font-size: 0.9em;
+        font-size: 0.8em;
+        margin-top: 8vh;
     }
 
     .contact-form-container {
-        width: 100%; 
-        justify-content: center;
-        align-items: center;
+        width: 100%;
     }
 
     .contact-form {
-        margin: 0 auto;
-        width: 90%; 
-        right: 5%; 
+        justify-content: center;
+        margin-right: 6vh;
+        width: 70%;
     }
 
     .button-container {
-        width: 90%; 
-        right: 5%; 
+        width: 100%;
+        margin-right: 20px;
+    }
+
+    .contact-info-email {
+        font-size: 0.8em;
+        margin-top: 25vh;
+        margin-left: 10vh;
+    }
+    
+    .email-icon {
+        width: 22px;
+        height: 15px;
     }
 
 
@@ -169,6 +226,7 @@ textarea {
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
     .Support-Bubble {
         width: 70%; 
         right: 15%;
@@ -176,11 +234,57 @@ textarea {
     }
 
     .Support-Person {
-        max-width: 60%; 
+        max-width: 35%; 
     }
 
     .support-text {
-        margin-top: 7vh; 
-        margin-bottom: 10vh; 
+        margin-top: 22vh;
+        font-size: 0.5em;
+    }
+
+    .email-icon {
+        width: 30px;
+        height: 20px;
+    }
+
+    .contact-info-email {
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+
+    .support-text {
+        margin-top: 25vh;
+        font-size: 0.7em;
+    }
+
+    .Support-Person {
+        max-width: 35%;
+    }
+
+    .email-icon {
+        width: 30px;
+        height: 20px;
+    }
+
+    .contact-info-email {
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1600px) {
+    .support-text {
+        margin-top: 22vh;
+        font-size: 0.9em;
+    }
+
+    .Support-Person {
+        max-width: 50%;
+    }
+
+    .email-icon {
+        width: 35px;
+        height: 25px;
     }
 }

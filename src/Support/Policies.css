@@ -1,0 +1,50 @@
+.policies-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.policy-header {
+    font-size: 6vh;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-bottom: 10%;
+    margin-left: 22%;
+}
+
+.policy-list {
+    margin-bottom: 20%;
+    white-space: nowrap;
+    margin-left: 40%;
+}
+
+.policy-list p {
+    margin-bottom: 2%;
+    white-space: nowrap;
+    font-size: 2vh;
+}
+
+.policy-list p strong {
+    color: #12385d;
+    white-space: nowrap;
+}
+
+a {
+    color: #12385d;
+    text-decoration: none;
+    font-size: 2vh ;
+    margin-left: 10%;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .policies-container {
+        max-width: 600px; /* Adjust as needed */
+        margin: 0 auto; /* Center horizontally */
+    }
+}

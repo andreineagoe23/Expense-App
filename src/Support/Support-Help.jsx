@@ -28,24 +28,28 @@ const SupportHelp = () => {
       </div>
 
       <div className="boxes">
+
         <Link to="/GeneralQueries">
           <button className="box">
             <h2>FAQ 1</h2>
             <p>General Queries</p>
           </button>
         </Link>
+
         <Link to="/FinancialQueries">
           <button className="box">
             <h2>FAQ 2</h2>
             <p>Financial Queries</p>
           </button>
         </Link>
+
         <Link to="/TroubleshootingQueries">
           <button className="box">
             <h2>FAQ 3</h2>
             <p>TroubleShooting Queries</p>
           </button>
         </Link>
+
         <Link to="/SecurityQueries">
           <button className="box">
             <h2>FAQ 4</h2>
@@ -55,7 +59,10 @@ const SupportHelp = () => {
 
         <Link to="/SupportCenter">
         <button className="Center-Button">Go to Support Center</button>
-      </Link>
+        </Link>
+        <Link to="/Policies">
+          <button className="Policies-Button">Go to Policies</button>
+        </Link>
       </div>
 
     </div>
@@ -63,5 +70,3 @@ const SupportHelp = () => {
 };
 
 export default SupportHelp;
-
-/*test*/

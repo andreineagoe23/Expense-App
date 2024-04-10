@@ -57,18 +57,19 @@
 }
 
 .home-button-icon {
-  width: 24px; 
-  height: 24px;
+  width: 25px; 
+  height: 25px;
   margin-right: 5px;
 }
 
 .button-text {
-  font-size: 16px;
+  font-size: 1.2em;
   line-height: 24px;
 }
 
 .button-subtext {
   display: block;
+  font-size: 1em;
 }
 
 .right-section img {
@@ -85,23 +86,20 @@
   display: flex;
   justify-content: center;
   margin-top: 50px;
-  padding-left: 130px;
+  padding-left: 220px;
 }
 
 .footer button {
-  width: auto;
+  background-color: #12385d;
+  color: white;
   margin-right: 50px;
-}
-@media screen and (min-width: 1024px) {
-  .footer {
-    justify-content: center; 
-  }
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 260px;
 }
 
-/* Media queries for responsiveness */
-@media screen and (max-width: 768px) {
-
-  /* Styles for small screens */
+@media (max-width: 768px) {
 
   .homepage-content {
     flex-direction: column;
@@ -156,46 +154,48 @@
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1023px) {
-
-  /* Styles for medium screens */
+@media (min-width: 769px) and (max-width: 1023px) {
 
   .homepage-content {
-    padding-left: 100px; /* Adjust padding for medium screens */
+    padding-left: 220px;
   }
 
-  .left-section,
+  .left-section {
+    width: 40%;
+  }
   .right-section {
-    width: 45%; /* Adjust width for medium screens */
-    padding: 20px;
+    width: 60%;
   }
 
   .left-section h1 {
-    font-size: 40px; /* Adjust font size for medium screens */
+    font-size: 1.5em; 
   }
 
   .left-section p {
-    font-size: 18px; /* Adjust font size for medium screens */
+    font-size: 1em; 
   }
 
   .right-section h2 {
-    font-size: 25px; /* Adjust font size for medium screens */
+    font-size: 25px;
   }
 
   .right-section img {
-    max-width: 100%; /* Adjust image size for medium screens */
+    max-width: 100%; 
     height: auto;
   }
 
   .home-button-container {
-    flex-direction: row; /* Revert to row layout for buttons */
+    flex-direction: row;
     align-items: center; 
-    justify-content: space-between; /* Add space between buttons */
+    justify-content: center; 
   }
 
+
+
   .homepage-button {
-    margin-right: 0; 
-    margin-bottom: 10px; 
+    width: 100px;
+    font-size: 0.7em;
+    margin-bottom: 20px; 
     margin-top: 10px;
   }
 

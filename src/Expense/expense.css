@@ -24,8 +24,8 @@
 
 .heading {
   cursor: pointer;
-  padding: 20px; /* Increase padding for larger buttons */
-  margin: 10px 0; /* Add margin between buttons */
+  padding: 20px; 
+  margin: 10px 0;
   background-color: #61ddb4;
   color: #fff;
   border: none;
