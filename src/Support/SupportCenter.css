@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
-
-body {
-    overflow: hidden;
+.support-container {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Istok Web', sans-serif;
+    margin-top: 20px;
+    margin-right: 20%;
 }
 
 .Support-Bubble {
@@ -9,64 +13,59 @@ body {
     align-items: center;
     position: fixed;
     width: 50%;
-    height: 130%;
+    height: 120%;
     right: 40%;
     top: -20%;
     transform: translateY(0%);
     z-index: -1;
+    object-fit: cover;
 }
 
 .Support-Person {
-    display: flex;
-    position: absolute;
-    margin-top: 70vh;
-    width: 35%;
-    left: 65vh;
-    transform: translate(-50%, -50%);
+    max-width: 60%;
+    display: block;
+    margin: 0 auto; 
 }
-
+    
 .support-text {
-    display: flex;
-    position: absolute;
-    margin-top: 30vh;
-    left: 60vh;
-    transform: translate(-50%, -50%);
     color: white;
     font-family: 'Istok Web', sans-serif;
+    width: auto;
+    margin-top: 10vh; 
+    margin-bottom: 12vh;
 }
 
 .contact-info-email {
     display: flex;
-    position: absolute;
-    left: 55vh;
-    margin-top: 90vh;
     color: white;
     font-family: 'Istok Web', sans-serif;
-    overflow-wrap: break-word;
-    transform: translate(-50%, -50%);
+    text-align: center; /* Center align the email container */
 }
 
-
 .email-icon {
-    height: 25px;
-    width: 30px;
-    margin-right: 10px;
+    margin-right: 10px; 
+}
+
+.contact-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; 
 }
 
 .contact-form {
     position: absolute;
-    width: 30%; 
-    top: 50%; 
+    width: 30%;
+    top: 50%;
     transform: translateY(-50%);
-    right: 5%; 
+    right: 5%;
     margin-top: 20px;
-    padding: 30px; 
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
 
 .form-group {
     margin-bottom: 20px;
@@ -105,35 +104,83 @@ textarea {
 }
 
 .button-container {
-    position: absolute;
-    width: 30%; 
-    top: 50%; 
-    transform: translateY(-50%);
-    right: 5%; 
-    margin-top: 20%;
-    padding: 30px; 
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .Live-Chat-Button, .Help-Button {
     background-color: #12385d;
     color: white;
     padding: 10px 20px;
-
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-left: 10px;
+    margin-left: 20px;
+    width: auto; /* Set width to auto for responsiveness */
 }
 
 .Live-Chat-Button:hover, .Help-Button:hover {
     background-color: #0d0b1b;
 }
 
+@media (max-width: 767px) {
+
+    .support-container {
+        margin-right: 0;
+    }
+
+    .Support-Bubble {
+        width: 80%; 
+        right: 20%; 
+        top: -15%; 
+    }
+
+    .Support-Person {
+        max-width: 80%; 
+    }
+
+    .support-text {
+        margin-top: 5vh;
+        font-size: 0.9em;
+    }
+
+    .contact-form-container {
+        width: 100%; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-form {
+        margin: 0 auto;
+        width: 90%; 
+        right: 5%; 
+    }
+
+    .button-container {
+        width: 90%; 
+        right: 5%; 
+    }
 
 
+}
 
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .Support-Bubble {
+        width: 70%; 
+        right: 15%;
+        top: -15%; 
+    }
+
+    .Support-Person {
+        max-width: 60%; 
+    }
+
+    .support-text {
+        margin-top: 7vh; 
+        margin-bottom: 10vh; 
+    }
+}
