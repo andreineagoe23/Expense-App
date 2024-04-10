@@ -1,29 +1,41 @@
-
+/* expense.css */
 
 .main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
-    position: absolute;
-    left: -5vh;
-    top: 3vh;
-  }
-  
-  .heading {
-    cursor: pointer;
-    padding: 10px 20px;
-    margin: 2vh;
-    background-color: #61ddb4;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-  }
-  .heading:hover {
-    background-color: #0056b3;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  padding: 20px; /* Add some padding for better spacing */
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.title p {
+  width: 100vh;
+}
+
+.buttons-container {
+  margin-left: 10px;
+}
+
+.heading {
+  cursor: pointer;
+  padding: 20px; /* Increase padding for larger buttons */
+  margin: 10px 0; /* Add margin between buttons */
+  background-color: #61ddb4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.heading:hover {
+  background-color: #0056b3;
+}
