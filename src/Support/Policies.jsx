@@ -20,7 +20,7 @@ const Policies = () => {
                 <p><strong>9. Acknowledgment:</strong> All Employees must review and stay up to date on these policies.</p>
                 <p><strong>10. Data Privacy:</strong>We value and prioritize your privacy and security. All information iss securely stored</p>
             </div>
-            <Link to="/SupportHelp">Back</Link>
+            <Link to="/SupportHelp" className="back-button">Back</Link>
         </div>
     );
 };
