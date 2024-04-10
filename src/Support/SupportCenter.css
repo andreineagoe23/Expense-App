@@ -1,101 +1,186 @@
-@import url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
-
-body {
-    overflow: hidden;
+.support-container {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Istok Web', sans-serif;
+    margin-top: 20px;
+    margin-right: 20%;
 }
-.Support-Bubble{
-    position: absolute;
+
+.Support-Bubble {
+    display: flex;
+    align-items: center;
+    position: fixed;
     width: 50%;
-    height: 99%;
-    top: 1%;
-    left: 12%; 
+    height: 120%;
+    right: 40%;
+    top: -20%;
+    transform: translateY(0%);
     z-index: -1;
-}
-.Support-Person{
-    position: absolute;
-    width: 40%;
-    height: 75%;
-    top: 45%;
+    object-fit: cover;
 }
 
-.text-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.Support-Person {
+    max-width: 60%;
+    display: block;
+    margin: 0 auto; 
+}
+    
+.support-text {
     color: white;
     font-family: 'Istok Web', sans-serif;
-    text-align: center;
-    width: 70%;
-    padding-left: 240px; 
+    width: auto;
+    margin-top: 10vh; 
+    margin-bottom: 12vh;
 }
 
-.support-text {
-    font-size: 0.8em;
-    font-weight: 700;
-    margin-bottom: 1vh;
+.contact-info-email {
+    display: flex;
+    color: white;
+    font-family: 'Istok Web', sans-serif;
+    text-align: center; /* Center align the email container */
 }
 
-.support-text, .contact-text, .contact-text2, .contact-info-email, .contact-info-location {
-    position: relative;
-    width: 100%; 
-    padding-left: 10%;
-    top : -200px;
-    text-align: top;
+.email-icon {
+    margin-right: 10px; 
+}
+
+.contact-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; 
 }
 
 .contact-form {
     position: absolute;
-    bottom: 25vh; 
-    right: 5%; 
-    font-family: 'Istok Web', sans-serif;
     width: 30%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+    margin-top: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-group {
-    margin-bottom: 2vh;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 label {
     display: block;
+    margin-bottom: 5px;
+    width: 100%;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
-    padding: 1vh;
-    border: 0.1vh solid #ccc;
-    border-radius: 1vh;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     box-sizing: border-box;
 }
 
 textarea {
-    height: 15vh;
+    height: 100px;
 }
 
-button {
-    background-color: #1d1b31;
+.submit-button {
+    background-color: #12385d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.Live-Chat-Button, .Help-Button {
+    background-color: #12385d;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-left: 20px;
+    width: auto; /* Set width to auto for responsiveness */
 }
 
-button:hover {
+.Live-Chat-Button:hover, .Help-Button:hover {
     background-color: #0d0b1b;
 }
 
-@media screen and (min-width: 768px) {
-.body{
-    overflow: auto;
-}
-    .text-container {
+@media (max-width: 767px) {
 
-        left: 20%;
+    .support-container {
+        margin-right: 0;
+    }
+
+    .Support-Bubble {
+        width: 80%; 
+        right: 20%; 
+        top: -15%; 
+    }
+
+    .Support-Person {
+        max-width: 80%; 
+    }
+
+    .support-text {
+        margin-top: 5vh;
+        font-size: 0.9em;
+    }
+
+    .contact-form-container {
+        width: 100%; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-form {
+        margin: 0 auto;
+        width: 90%; 
+        right: 5%; 
+    }
+
+    .button-container {
+        width: 90%; 
+        right: 5%; 
     }
 
 
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .Support-Bubble {
+        width: 70%; 
+        right: 15%;
+        top: -15%; 
+    }
+
+    .Support-Person {
+        max-width: 60%; 
+    }
+
+    .support-text {
+        margin-top: 7vh; 
+        margin-bottom: 10vh; 
+    }
 }

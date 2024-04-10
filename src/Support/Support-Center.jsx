@@ -1,28 +1,35 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import supportBubble from './SupportBubble.png';
 import supportPerson from './SupportPerson.png';
 import './SupportCenter.css';
+import emailImg from './email-icon.png'
 
 const SupportCenter = () => {
     return (
-        <div>
-            <div className="text-container">
-                <div className="support-text">
-                    <h1>Welcome to the Support Center</h1>
-                </div>
-                <div className="contact-text">
-                    <p>Reach out to us via email through</p>
-                </div>
-                <div className="contact-text2">
-                    <p>the contact form to the right for support.</p>
-                </div>
-                <div className="contact-info-email">
-                    <p>expenseapp@gmail.com</p>
-                </div>
-                <div className="contact-info-location">
-                    <p>Mile End, London</p>
-                </div>
-            </div>
+    <div className="support-page">
+
+<div className="support-container">
+
+    <div className="text-container">
+        <div className="support-text">
+            <h1>Welcome to the Support Center</h1>
+        </div>
+    </div>
+
+    <div className="support-images-container">
+        <img src={supportBubble} alt='Bubble' className='Support-Bubble'/>
+        <img src={supportPerson} alt='Person' className='Support-Person'/>
+    </div>
+
+    <div className="contact-info-email">
+        <img src={emailImg} alt='Email' className='email-icon'/>
+        <p>expenseapp@gmail.com</p>
+    </div>
+
+</div>
+        
+        <div className="contact-form-container">
             <form className="contact-form">
                 <div className="form-group">
                     <label htmlFor="fullName">Full Name:</label>
@@ -36,11 +43,21 @@ const SupportCenter = () => {
                     <label htmlFor="message">Message:</label>
                     <textarea id="message" name="message" rows="4"/>
                 </div>
-                <button type="button" onClick={() => window.location.href = '/SupportManagement.jsx'}>Submit</button>
+                <button type="button" className="submit-button"
+                        onClick={() => window.location.href = '/SupportManagement.jsx'}>Submit
+                </button>
+
+                <div className="button-container">
+                <Link to="/SupportHelp">
+                    <button className="Help-Button">Help Articles</button>
+                </Link>
+                <button className="Live-Chat-Button">Live Support</button>
+            </div>
             </form>
-            <img src={supportBubble} alt='Bubble' className='Support-Bubble'/>
-            <img src={supportPerson} alt='Person' className='Support-Person'/>
+
         </div>
+
+    </div>
     );
 }
 

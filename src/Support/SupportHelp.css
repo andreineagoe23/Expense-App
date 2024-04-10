@@ -1,0 +1,91 @@
+body {
+    overflow: hidden;
+}
+.Support-Bubble2{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 50%;
+    height: 130%;
+    right: 40%;
+    top:-20%;
+    transform: translateY(0%);
+    z-index: -1;
+}
+
+/*test****/
+.Location-Icon {
+    position: absolute;
+}
+.Location-Icon2 {
+    position: fixed;
+    width: 2vh;
+    height: auto;
+    top: 80%;
+    left: 38%;
+    transform: translateY(-50%);
+}
+.Email-Icon2 {
+    position: absolute;
+    width: 3vh;
+    height: auto;
+    bottom: 8.8vh;
+    left: calc(30vh + 2vh);
+}
+.Support-Person2{
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    right: 47%;
+    top: 40%;
+    transform: translateY(-10%);
+
+}
+.boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 10%;
+    right:7vw;
+    padding: 0.3vw;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 30vw;
+    background-color: #f0f0f0;
+    padding: 0.01vw ;
+    margin-bottom: 2vw;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.box h2 {
+    margin-bottom: 1vw;
+    font-weight: bold;
+}
+
+.box p {
+    font-size: 1.5vw;
+    color: #666;
+}
+
+
+
+button:hover {
+    background-color: black;
+}
+.Center-Button {
+    position: relative;
+    background-color: #12385d;
+    color: #fff;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 20vh;
+    margin-top: 20px;
+}

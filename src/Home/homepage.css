@@ -1,4 +1,5 @@
 /* homepage.css */
+
 .homepage {
   display: flex;
   flex-direction: column;
@@ -7,19 +8,19 @@
 
 .homepage-content {
   display: flex;
-  width: 100%;
+  flex-wrap: wrap; /* Ensure the content wraps when needed */
   justify-content: space-between;
   margin-top: 20px;
+  padding-left: 200px;
 }
 
 .left-section {
   width: 45%;
   padding: 20px;
-  padding-left: 80px;
 }
 
 .right-section {
-  width: 50%;
+  width: 50%; 
   padding: 20px;
 }
 
@@ -34,15 +35,15 @@
   margin-bottom: 20px;
 }
 
-.button-container {
+.home-button-container {
   display: flex;
   flex-direction: row; 
 }
 
-button {
+.homepage-button {
   align-items: center;
   padding: 10px 20px;
-  margin-right: 10px; 
+  margin-right: 20px; 
   background-color: #12385d;
   color: white;
   border: none;
@@ -51,18 +52,28 @@ button {
   transition: background-color 0.3s ease-in-out;
 }
 
-button:hover {
+.homepage-button:hover {
   background-color: #006653;
 }
 
-.button-icon {
+.home-button-icon {
   width: 24px; 
   height: 24px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .button-text {
   font-size: 16px;
+  line-height: 24px;
+}
+
+.button-subtext {
+  display: block;
+}
+
+.right-section img {
+  max-width: 100%; 
+  height: auto;
 }
 
 .right-section h2 {
@@ -72,7 +83,133 @@ button:hover {
 
 .footer {
   display: flex;
-  justify-content: space-evenly;
-  width: 100%;
+  justify-content: center;
   margin-top: 50px;
+  padding-left: 130px;
+}
+
+.footer button {
+  width: auto;
+  margin-right: 50px;
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    justify-content: center; 
+  }
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+
+  /* Styles for small screens */
+
+  .homepage-content {
+    flex-direction: column;
+    padding-left: 0; 
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%; 
+    padding: 20px;
+  }
+
+  .left-section h1 {
+    font-size: 30px;
+  }
+
+  .left-section p {
+    font-size: 16px;
+  }
+
+  .right-section h2 {
+    font-size: 20px;
+  }
+
+  .right-section img {
+    max-width: 100%; 
+    height: auto;
+  }
+
+  .home-button-container {
+    flex-direction: row; 
+    align-items: center; 
+  }
+
+  .homepage-button {
+    margin-right: 0; 
+    margin-bottom: 10px; 
+  }
+
+  .footer {
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .footer button {
+    width: 350px;
+    margin-right: 0; 
+    margin-bottom: 10px; 
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+
+  /* Styles for medium screens */
+
+  .homepage-content {
+    padding-left: 100px; /* Adjust padding for medium screens */
+  }
+
+  .left-section,
+  .right-section {
+    width: 45%; /* Adjust width for medium screens */
+    padding: 20px;
+  }
+
+  .left-section h1 {
+    font-size: 40px; /* Adjust font size for medium screens */
+  }
+
+  .left-section p {
+    font-size: 18px; /* Adjust font size for medium screens */
+  }
+
+  .right-section h2 {
+    font-size: 25px; /* Adjust font size for medium screens */
+  }
+
+  .right-section img {
+    max-width: 100%; /* Adjust image size for medium screens */
+    height: auto;
+  }
+
+  .home-button-container {
+    flex-direction: row; /* Revert to row layout for buttons */
+    align-items: center; 
+    justify-content: space-between; /* Add space between buttons */
+  }
+
+  .homepage-button {
+    margin-right: 0; 
+    margin-bottom: 10px; 
+    margin-top: 10px;
+  }
+
+  .footer {
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px;
+  }
+
+  .footer button {
+    width: 350px;
+    margin-right: 0; 
+    margin-bottom: 10px; 
+  }
+
 }

@@ -4,7 +4,6 @@
   
   .confetti-section {
     position: fixed;
-    top: 80px; 
     left: 0;
     width: 100%;
     height: calc(100vh - 80px); 
@@ -17,13 +16,16 @@
   .confetti-section video {
     width: 100%;
     height: 100%;
+    max-height: 100%;
+    max-width: 100%;
     object-fit: cover;
   }
   
   .text-section {
     position: relative;
     text-align: center;
-    margin-top: 20%; 
+    margin-top: 10%;
+    right: -37%;
   }
   
   .text-content {
