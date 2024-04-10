@@ -2,7 +2,6 @@ import { useEffect, useState } from "react"
 
 // components
 import ExpenseDetails from "../components/ExpenseDetails.js"
-import Claimform from "../Claim/claim.js";
 
 const View = () => {
     const [workouts, setWorkouts] = useState(null)

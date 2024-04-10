@@ -8,6 +8,7 @@ const ExpenseDetails = ({ workout }) => {
       <p><strong>CompanyName: </strong>{workout.CompanyName}</p>
       <p><strong>EmployeeName: </strong>{workout.EmployeeName}</p>
       <p><strong>Amount:£ </strong>{workout.Amount}</p>
+      
     </div>
   )
 }

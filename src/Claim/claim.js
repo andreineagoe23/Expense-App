@@ -133,6 +133,7 @@ const Claimform = () => {
         <div className="form-action-buttons">
           <button type="submit" className="submit-button">Submit</button>
           <button type="button" className="clear-button" onClick={handleClear}>Clear Form</button>
+          <button type="button" className="view-expenses" onClick={() => window.location.href = '/view'}>View Expenses</button>
         </div>
       </form>
     </div>
