@@ -100,13 +100,13 @@
 }
 
 
-  @media screen and (max-width: 1023px) { 
+  @media (min-width: 769px) and (max-width: 1023px) { 
     nav {
         width: 100px; 
     }
   
     .current-user {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       margin-bottom: 10px;
     }
   
@@ -128,7 +128,7 @@
     
   }
 
-  @media screen and (max-width: 768px) { 
+  @media (max-width: 768px) { 
     .burger-menu {
       display: block;
       position: fixed;
