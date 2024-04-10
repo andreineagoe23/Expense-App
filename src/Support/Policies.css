@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
 }
 
 .policy-header {
@@ -47,4 +46,15 @@ a:hover {
         max-width: 600px; /* Adjust as needed */
         margin: 0 auto; /* Center horizontally */
     }
+}
+
+.back-button {
+    background-color: #12385d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
