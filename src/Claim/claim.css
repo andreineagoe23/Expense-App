@@ -47,9 +47,9 @@
   justify-content: space-between;
 }
 
-.submit-button,
-.clear-button,
-.view-button {
+.claim-submit-button,
+.claim-clear-button,
+.claim-view-button {
   cursor: pointer;
   padding: 8px 15px; /* Adjusted padding */
   border: none;
@@ -60,20 +60,24 @@
   margin-right: 5pt;
 }
 
-.submit-button {
+.claim-view-button{
+  cursor: pointer;
+}
+
+.claim-submit-button {
   background-color: #007bff;
   color: white;
 }
 
-.clear-button {
+.claim-clear-button {
   background-color: #6c757d;
   color: white;
 }
 
-.submit-button:hover {
+.claim-submit-button:hover {
   background-color: #0056b3;
 }
 
-.clear-button:hover {
+.claim-clear-button:hover {
   background-color: #545b62;
 }
