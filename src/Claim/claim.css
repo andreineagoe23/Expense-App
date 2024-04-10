@@ -1,4 +1,4 @@
-body {
+/* body {
   font-family: "Arial", sans-serif;
   background-color: #f4f7f6;
   color: #333;
@@ -8,7 +8,7 @@ body {
 
 h1 {
   color: #333;
-  margin-bottom: 20px; /* Provides spacing between the title and the form */
+  margin-bottom: 20px;
 }
 
 form {
@@ -23,8 +23,8 @@ form {
 
 label {
   display: flex;
-  align-items: center; /* Centers label with the input */
-  margin-right: 10px; /* Space between label and input */
+  align-items: center; 
+  margin-right: 10px; 
 }
 
 input[type="text"],
@@ -34,10 +34,10 @@ input[type="submit"],
 input[type="reset"] {
   width: 100%;
   padding: 8px;
-  margin-bottom: 2px; /* Provides spacing between form elements */
+  margin-bottom: 2px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box; /* Ensures padding doesn't add to the width */
+  box-sizing: border-box; 
 }
 
 button {
@@ -72,4 +72,4 @@ button:hover[type="button"] {
     justify-content: flex-start;
     margin-right: 0;
   }
-}
+} */

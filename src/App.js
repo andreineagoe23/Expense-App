@@ -15,6 +15,10 @@ import Claimform from "./Claim/claim.js";
 import Reimbursementform from "./Reimbursement/reimbursement.js";
 import ForgotPassword  from "./Login/ForgotPassword";
 import { auth } from "./firebase";
+import GeneralQueries from "./Support/GeneralQueries.jsx";
+import FinancialQueries from "./Support/FinancialQueries.jsx";
+import TroubleQueries from "./Support/TroublesQueries.jsx";
+import SecurityQueries from "./Support/SecurityQueries.jsx";
 
 function App() {
     const [currentUser, setCurrentUser] = useState(null);
@@ -48,6 +52,10 @@ function App() {
                     <Route path="/TrainingFinishPage" element={<TrainingFinishPage />} />
                     <Route path="/SupportCenter" element={<SupportCenter />} />
                     <Route path="/SupportHelp" element={<SupportHelp />} />
+                    <Route path="/GeneralQueries" element={<GeneralQueries />} />
+                    <Route path="/FinancialQueries" element={<FinancialQueries />} />
+                    <Route path="/TroubleshootingQueries" element={<TroubleQueries />} />
+                    <Route path="/SecurityQueries" element={<SecurityQueries />} />
                     <Route path="/Expense" element={<Expense />} />
                     <Route path="/claim" element={<Claimform />} />
                     <Route path="/reimbursement" element={<Reimbursementform />} />
