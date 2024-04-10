@@ -30,7 +30,7 @@ function Expense() {
               <p>Request for a reimbursement.</p>
             </div>
           </Link>
-          <Link className="heading" to="/view-reports">
+          <Link className="heading" to="/view">
             <div>
             <h3>View Expense Reports</h3>
               <p>View your history of expense reports.</p>

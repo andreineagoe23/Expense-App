@@ -15,6 +15,7 @@ import Claimform from "./Claim/claim.js";
 import Reimbursementform from "./Reimbursement/reimbursement.js";
 import ForgotPassword  from "./Login/ForgotPassword";
 import { auth } from "./firebase";
+import View from "./ViewExpense/view.js";
 
 function App() {
     const [currentUser, setCurrentUser] = useState(null);
@@ -51,6 +52,7 @@ function App() {
                     <Route path="/Expense" element={<Expense />} />
                     <Route path="/claim" element={<Claimform />} />
                     <Route path="/reimbursement" element={<Reimbursementform />} />
+                    <Route path="view" element={<View />} />
                 </Routes>
             </div>
         </BrowserRouter>
