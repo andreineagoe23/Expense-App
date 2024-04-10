@@ -10,7 +10,7 @@
 }
 
 .current-user {
-  font-size: 1.1rem;
+  font-size: 0.7rem;
   margin-bottom: 10px;
 }
 
@@ -59,7 +59,7 @@
 #login {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center items horizontally */
+  align-items: center;
   list-style: none;
   padding: 0;
   margin: 0;
