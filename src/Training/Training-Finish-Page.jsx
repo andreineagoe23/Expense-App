@@ -15,13 +15,13 @@ const TrainingFinishPage = () => {
                     </video>
                 </div>
             </section>
-            <section className="text-section">
+            <div className="text-section">
                 <div className="text-content">
                     <h2><strong>Congratulations</strong></h2>
                     <p>You have now completed the training demo for our app and are ready to embark on the journey of expense tracking.</p>
                     <p>Feel free to consult this video at any time, and for further help contact us on the support page</p>
                 </div>
-            </section>
+            </div>
         </div>
     );
 };

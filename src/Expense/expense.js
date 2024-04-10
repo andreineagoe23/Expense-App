@@ -5,7 +5,6 @@ import './expense.css';
 
 function Expense() {
   return (
-    <>
       <div className="main-content">
         <div className="title">
           <h1>Expense Management</h1>
@@ -30,7 +29,7 @@ function Expense() {
               <p>Request for a reimbursement.</p>
             </div>
           </Link>
-          <Link className="heading" to="/view-reports">
+          <Link className="heading" to="/view">
             <div>
             <h3>View Expense Reports</h3>
               <p>View your history of expense reports.</p>
@@ -38,7 +37,6 @@ function Expense() {
           </Link>
         </div>
       </div>
-    </>
   );
 }
 

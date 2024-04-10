@@ -22,7 +22,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 60%; /* Adjust width to fit within the right 60% */
+  width: 60%;
   max-width: 400px; 
   padding: 2rem;
   background: #fff;

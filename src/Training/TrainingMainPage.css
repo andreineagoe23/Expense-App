@@ -20,7 +20,7 @@
 
 .intro-text {
     position: absolute;
-    top: 50%; /* Center vertically */
+    top: 50%; 
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -37,15 +37,22 @@
     text-align: right;
 }
 
-.next-page button {
+.next-page-button {
     background-color: #12385d;
     color: white;
-    padding: 10px 20px;
+    padding: 0.5em 2em;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 0.5em;
+    font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 20px;  
+    margin-left: 45%;
+    transform: translateX(-50%);
+    z-index: 2;
+    position: absolute; 
+    bottom: 20px; 
+    right: 20px; 
 }
 
 .next-page button:hover {
