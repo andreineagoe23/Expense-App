@@ -19,6 +19,7 @@ import GeneralQueries from "./Support/GeneralQueries.jsx";
 import FinancialQueries from "./Support/FinancialQueries.jsx";
 import TroubleQueries from "./Support/TroublesQueries.jsx";
 import SecurityQueries from "./Support/SecurityQueries.jsx";
+import Policies from "./Support/Policies.jsx";
 
 function App() {
     const [currentUser, setCurrentUser] = useState(null);
@@ -59,6 +60,7 @@ function App() {
                     <Route path="/Expense" element={<Expense />} />
                     <Route path="/claim" element={<Claimform />} />
                     <Route path="/reimbursement" element={<Reimbursementform />} />
+                    <Route path="/Policies" element={<Policies />} />
                 </Routes>
             </div>
         </BrowserRouter>

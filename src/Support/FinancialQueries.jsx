@@ -17,7 +17,7 @@ const FinancialQueries = () => {
                     </div>
                     <div className="fq-faq2">How long does it take for expense reimbursement to be processed?</div>
                     <div className="fq-ans2">
-                        The processing time for expense reimnbursements is roughly 3-5 working days.
+                        The processing time for expense reimbursements is roughly 3-5 working days.
                     </div>
                     <div className="fq-faq3">
                         Are there any fees associated with using the expense tracking service?<br />

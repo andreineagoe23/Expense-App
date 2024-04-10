@@ -60,6 +60,9 @@ const SupportHelp = () => {
         <Link to="/SupportCenter">
         <button className="Center-Button">Go to Support Center</button>
         </Link>
+        <Link to="/Policies">
+          <button className="Policies-Button">Go to Policies</button>
+        </Link>
       </div>
 
     </div>
