@@ -86,3 +86,17 @@ body {
     transition: background-color 0.3s ease;
     margin-top: 20px;
 }
+.Policies-Button{
+    height: 5vh;
+    width: 23vh;
+    padding: 5px;
+    position: relative;
+    background-color: #12385d;
+    color: #fff;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
