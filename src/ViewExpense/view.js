@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import "./view.css"
 
 // components
 import ExpenseDetails from "../components/ExpenseDetails.js"
@@ -20,7 +21,7 @@ const View = () => {
     }, [])
   
     return (
-      <div className="home">
+      <div className="home-view">
         <div className="workouts">
           {workouts && workouts.map(workout => (
             <ExpenseDetails workout={workout} key={workout._id} />
@@ -29,7 +30,5 @@ const View = () => {
       </div>
     )
   }
-  
-
 
 export default View

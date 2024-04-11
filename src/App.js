@@ -45,7 +45,8 @@ function App() {
             <div className="App">
                 <Navbar currentUser={currentUser} />
                 <Routes>
-                    <Route path="/" element={<HomePage />} />
+                    <Route path="/" element={<RegisterForm />} />
+                    <Route path="/home" element={<HomePage />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/forgot-password" element={<ForgotPassword />} />
                     <Route path="/register" element={<RegisterForm />} />

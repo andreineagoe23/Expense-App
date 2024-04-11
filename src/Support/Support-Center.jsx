@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import supportBubble from './SupportBubble.png';
 import supportPerson from './SupportPerson.png';
+import { Link } from 'react-router-dom';
 import './SupportCenter.css';
 import emailImg from './email-icon.png';
 
@@ -56,6 +57,12 @@ const SupportCenter = () => {
                     <textarea id="message" name="message" rows="4" onChange={handleChange} value={formData.message} />
                 </div>
                 <button type="button" className="submit-button" onClick={handleSubmit}>Submit</button>
+                <div className="button-container">
+                <Link to="/SupportHelp">
+                    <button className="Help-Button">Help Articles</button>
+                </Link>
+                <button className="Live-Chat-Button">Live Support</button>
+            </div>
             </form>
         </div>
     );
