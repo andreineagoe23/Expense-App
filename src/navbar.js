@@ -89,7 +89,7 @@ function Navbar({ currentUser }) {
           <div className="navbar-bottom">
             <ul id="login">
               <li>
-                <Link to="/" onClick={handleLogout}>Logout</Link>
+                <Link to="/login" onClick={handleLogout}>Logout</Link>
               </li>
               <li>
               </li>
