@@ -20,6 +20,7 @@ import FinancialQueries from "./Support/FinancialQueries.jsx";
 import TroubleQueries from "./Support/TroublesQueries.jsx";
 import SecurityQueries from "./Support/SecurityQueries.jsx";
 import Policies from "./Support/Policies.jsx";
+import View from "./ViewExpense/view.js";
 
 function App() {
     const [currentUser, setCurrentUser] = useState(null);
@@ -44,7 +45,8 @@ function App() {
             <div className="App">
                 <Navbar currentUser={currentUser} />
                 <Routes>
-                    <Route path="/" element={<HomePage />} />
+                    <Route path="/" element={<RegisterForm />} />
+                    <Route path="/home" element={<HomePage />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/forgot-password" element={<ForgotPassword />} />
                     <Route path="/register" element={<RegisterForm />} />
@@ -61,6 +63,7 @@ function App() {
                     <Route path="/claim" element={<Claimform />} />
                     <Route path="/reimbursement" element={<Reimbursementform />} />
                     <Route path="/Policies" element={<Policies />} />
+                    <Route path="view" element={<View />} />
                 </Routes>
             </div>
         </BrowserRouter>

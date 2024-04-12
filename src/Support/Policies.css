@@ -43,8 +43,8 @@ a:hover {
 
 @media (min-width: 768px) {
     .policies-container {
-        max-width: 600px; /* Adjust as needed */
-        margin: 0 auto; /* Center horizontally */
+        max-width: 600px; 
+        margin: 0 auto;
     }
 }
 

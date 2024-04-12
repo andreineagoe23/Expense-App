@@ -54,7 +54,7 @@
     align-items: flex-start;
     position: absolute;
     top: 10%;
-    right: 7vw; /* Adjusted from 7vw to maintain consistent positioning */
+    right: 7vw; 
     padding: 0.3vw;
     box-sizing: border-box;
 }

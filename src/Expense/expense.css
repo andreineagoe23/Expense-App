@@ -4,29 +4,33 @@
   display: flex;
   flex-direction: column;
   align-items: center; 
-  justify-content: center; 
-  padding: 20px; /* Add some padding for better spacing */
+  justify-content: center;
+  padding-left: 200px;
 }
 
 .title {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .title p {
   width: 100vh;
+  margin-top: 150px;
 }
 
 .buttons-container {
-  margin-left: 10px;
+  margin-left: 20px;
+  margin-top: 150px;
+  justify-content: center;
+  display: flex;
 }
 
 .heading {
   cursor: pointer;
-  padding: 20px; 
-  margin: 10px 0;
+  padding: 10px; 
+  margin: 10px 10px;
   background-color: #61ddb4;
   color: #fff;
   border: none;
@@ -38,4 +42,41 @@
 
 .heading:hover {
   background-color: #0056b3;
+}
+
+@media (min-width: 769px)and (max-width: 1024px) {
+  
+  .main-content {
+    padding-left: 0;
+  }
+
+  .title p {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .buttons-container {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  
+  .main-content {
+    padding-left: 0;
+  }
+
+  .title p {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .buttons-container {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
 }

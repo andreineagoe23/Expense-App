@@ -22,6 +22,11 @@ function Navbar({ currentUser }) {
     return null;
   }
 
+  const isRegisterPage2 = location.pathname === "/";
+  if (isRegisterPage2) {
+    return null;
+  }
+
   const handleLogout = async () => {
     try {
       await auth.signOut();
@@ -38,7 +43,7 @@ function Navbar({ currentUser }) {
 
         <nav id="slide-out-navbar" className="navbar">
           <div className="navbar-left">
-            <Link to="/homepage">
+            <Link to="/home">
               <img src={logo} alt="logo"/>
             </Link>
             <div className="current-user">{currentUser}</div>
@@ -47,7 +52,7 @@ function Navbar({ currentUser }) {
           <div className="navbar-middle">
             <ul id="navbar">
               <li>
-                <Link to="/">
+                <Link to="/home">
                   <img src={homeIcon} alt="Home Icon"/> Home
                 </Link>
               </li>
@@ -84,7 +89,7 @@ function Navbar({ currentUser }) {
           <div className="navbar-bottom">
             <ul id="login">
               <li>
-                <Link to="/" onClick={handleLogout}>Logout</Link>
+                <Link to="/login" onClick={handleLogout}>Logout</Link>
               </li>
               <li>
               </li>

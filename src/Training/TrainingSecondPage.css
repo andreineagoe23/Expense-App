@@ -69,9 +69,9 @@
 
 
 .video-selection {
-    display: flex; /* Use flexbox for easy centering */
-  flex-direction: column; /* Stack elements vertically */
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically within available space*/
+    display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
   margin-top: 50px;
 }
