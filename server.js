@@ -16,7 +16,7 @@ app.post('/send-email', (req, res) => {
         secure: false,
         auth: {
             user: 'tiagomiguel03@outlook.com',
-            pass: 'Azulazul7_77',
+            pass: 'azulazul7',
         },
     });
     const mailOptions = {
